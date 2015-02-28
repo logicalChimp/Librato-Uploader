@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-rc1" sequence="0" timestamp="1424964777505" analysisTimestamp="1424964777528" release="">
+  <Project projectName="">
+    <Jar>/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes</Jar>
+    <AuxClasspathEntry>/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/shared/servlet-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib</AuxClasspathEntry>
+    <SrcDir>/home/travis/build/draysontechnologies/Zen/src</SrcDir>
+  </Project>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.api.Synchronise">
+      <SourceLine classname="com.paconsulting.puffin.gae.api.Synchronise" start="32" end="85" sourcefile="Synchronise.java" sourcepath="com/paconsulting/puffin/gae/api/Synchronise.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.api.Synchronise" name="syncReadings" signature="(Lcom/google/appengine/api/users/User;Lcom/paconsulting/puffin/gae/beans/AirTagReadings;)Lcom/paconsulting/puffin/gae/beans/AirTagReadings;" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.api.Synchronise" start="51" end="85" startBytecode="0" endBytecode="609" sourcefile="Synchronise.java" sourcepath="com/paconsulting/puffin/gae/api/Synchronise.java"/>
+    </Method>
+    <LocalVariable name="readingsToSynchronise" register="4" pc="31" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="com.paconsulting.puffin.gae.beans.AirTagReadings" name="getReadings" signature="()Ljava/util/List;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.AirTagReadings" start="43" end="46" startBytecode="0" endBytecode="85" sourcefile="AirTagReadings.java" sourcepath="com/paconsulting/puffin/gae/beans/AirTagReadings.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.api.Synchronise" start="58" end="58" startBytecode="33" endBytecode="33" sourcefile="Synchronise.java" sourcepath="com/paconsulting/puffin/gae/api/Synchronise.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" start="20" end="35" sourcefile="DebugDataWrapper.java" sourcepath="com/paconsulting/puffin/gae/beans/DebugDataWrapper.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" name="getData" signature="()[B" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" start="25" end="25" startBytecode="0" endBytecode="46" sourcefile="DebugDataWrapper.java" sourcepath="com/paconsulting/puffin/gae/beans/DebugDataWrapper.java"/>
+    </Method>
+    <Field classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" name="data" signature="[B" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" sourcefile="DebugDataWrapper.java" sourcepath="com/paconsulting/puffin/gae/beans/DebugDataWrapper.java"/>
+    </Field>
+    <SourceLine classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" start="25" end="25" startBytecode="4" endBytecode="4" sourcefile="DebugDataWrapper.java" sourcepath="com/paconsulting/puffin/gae/beans/DebugDataWrapper.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" start="20" end="35" sourcefile="DebugDataWrapper.java" sourcepath="com/paconsulting/puffin/gae/beans/DebugDataWrapper.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" name="setData" signature="([B)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" start="28" end="29" startBytecode="0" endBytecode="61" sourcefile="DebugDataWrapper.java" sourcepath="com/paconsulting/puffin/gae/beans/DebugDataWrapper.java"/>
+    </Method>
+    <Field classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" name="data" signature="[B" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" sourcefile="DebugDataWrapper.java" sourcepath="com/paconsulting/puffin/gae/beans/DebugDataWrapper.java"/>
+    </Field>
+    <LocalVariable name="aData" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.beans.DebugDataWrapper" start="28" end="28" startBytecode="2" endBytecode="2" sourcefile="DebugDataWrapper.java" sourcepath="com/paconsulting/puffin/gae/beans/DebugDataWrapper.java"/>
+  </BugInstance>
+  <BugInstance type="SE_BAD_FIELD" priority="1" rank="14" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.paconsulting.puffin.gae.beans.datastore.JourneySegment">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.JourneySegment" start="29" end="274" sourcefile="JourneySegment.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/JourneySegment.java"/>
+    </Class>
+    <Field classname="com.paconsulting.puffin.gae.beans.datastore.JourneySegment" name="jsad" signature="Lcom/paconsulting/puffin/gae/beans/datastore/JourneySegmentAnalyticalData;" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.JourneySegment" sourcefile="JourneySegment.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/JourneySegment.java"/>
+    </Field>
+    <Type descriptor="Lcom/paconsulting/puffin/gae/beans/datastore/JourneySegmentAnalyticalData;" role="TYPE_FOUND">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.JourneySegmentAnalyticalData" start="26" end="129" sourcefile="JourneySegmentAnalyticalData.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/JourneySegmentAnalyticalData.java"/>
+    </Type>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="2" rank="16" abbrev="NP" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="32" end="252" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" name="createKey" signature="(Ljava/lang/Long;)Lcom/googlecode/objectify/Key;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="239" end="243" startBytecode="0" endBytecode="21" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+    </Method>
+    <LocalVariable name="userId" register="0" pc="17" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="240" end="240" startBytecode="20" endBytecode="20" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE" priority="2" rank="11" abbrev="RCN" category="CORRECTNESS">
+    <Class classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="32" end="252" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" name="setRoles" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="124" end="130" startBytecode="0" endBytecode="192" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+    </Method>
+    <LocalVariable name="aRoles" register="1" pc="18" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="124" end="124" startBytecode="6" endBytecode="6" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="125" end="125" startBytecode="19" endBytecode="19" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="2" rank="16" abbrev="NP" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.beans.datastore.Session">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.Session" start="24" end="118" sourcefile="Session.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/Session.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.beans.datastore.Session" name="createKey" signature="(Ljava/lang/Long;)Lcom/googlecode/objectify/Key;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.Session" start="94" end="98" startBytecode="0" endBytecode="21" sourcefile="Session.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/Session.java"/>
+    </Method>
+    <LocalVariable name="sessionToken" register="0" pc="17" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.Session" start="95" end="95" startBytecode="20" endBytecode="20" sourcefile="Session.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/Session.java"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="2" rank="16" abbrev="NP" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.AirTagManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="31" end="464" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.AirTagManager" name="getReadingsForTimeRange" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/AirTag;Ljava/lang/Long;Ljava/lang/Long;)Ljava/util/List;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="416" end="432" startBytecode="0" endBytecode="90" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Method>
+    <LocalVariable name="device" register="0" pc="18" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="417" end="417" startBytecode="21" endBytecode="21" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.AirTagManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="31" end="464" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.AirTagManager" name="deactivateAirTag" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="457" end="464" startBytecode="0" endBytecode="166" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="463" end="463" startBytecode="64" endBytecode="64" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.AirTagManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="31" end="464" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.AirTagManager" name="registerAirBeacon" signature="(Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;Ljava/lang/Double;Ljava/lang/Double;)Lcom/paconsulting/puffin/gae/beans/datastore/AirTag;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="133" end="163" startBytecode="0" endBytecode="562" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="161" end="161" startBytecode="362" endBytecode="362" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.AirTagManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="31" end="464" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.AirTagManager" name="registerAirTag" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Ljava/lang/String;)Lcom/paconsulting/puffin/gae/beans/datastore/AirTag;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="101" end="120" startBytecode="0" endBytecode="302" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="118" end="118" startBytecode="171" endBytecode="171" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.AirTagManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="31" end="464" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.AirTagManager" name="saveReadingAsLatest" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/AirTagReading;)Lcom/paconsulting/puffin/gae/beans/datastore/LatestAirTagReading;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="391" end="393" startBytecode="0" endBytecode="90" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="392" end="392" startBytecode="23" endBytecode="23" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.AirTagManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="31" end="464" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.AirTagManager" name="updateAirTagConfiguration" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/AirTagConfiguration;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="215" end="218" startBytecode="0" endBytecode="84" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.AirTagManager" start="216" end="216" startBytecode="19" endBytecode="19" sourcefile="AirTagManager.java" sourcepath="com/paconsulting/puffin/gae/business/AirTagManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.CleanMileManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.CleanMileManager" start="18" end="97" sourcefile="CleanMileManager.java" sourcepath="com/paconsulting/puffin/gae/business/CleanMileManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.CleanMileManager" name="updateCleanMile" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/CleanMileStub;)Lcom/paconsulting/puffin/gae/beans/datastore/CleanMileStub;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.CleanMileManager" start="76" end="85" startBytecode="0" endBytecode="133" sourcefile="CleanMileManager.java" sourcepath="com/paconsulting/puffin/gae/business/CleanMileManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.CleanMileManager" start="83" end="83" startBytecode="49" endBytecode="49" sourcefile="CleanMileManager.java" sourcepath="com/paconsulting/puffin/gae/business/CleanMileManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.ConfigurationManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.ConfigurationManager" start="26" end="190" sourcefile="ConfigurationManager.java" sourcepath="com/paconsulting/puffin/gae/business/ConfigurationManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.ConfigurationManager" name="setEmailTemplate" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/EmailTemplate;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.ConfigurationManager" start="189" end="190" startBytecode="0" endBytecode="66" sourcefile="ConfigurationManager.java" sourcepath="com/paconsulting/puffin/gae/business/ConfigurationManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.ConfigurationManager" start="189" end="189" startBytecode="14" endBytecode="14" sourcefile="ConfigurationManager.java" sourcepath="com/paconsulting/puffin/gae/business/ConfigurationManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.ConfigurationManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.ConfigurationManager" start="26" end="190" sourcefile="ConfigurationManager.java" sourcepath="com/paconsulting/puffin/gae/business/ConfigurationManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.ConfigurationManager" name="updateConfigurationValueForUser" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/ConfigValue;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.ConfigurationManager" start="74" end="86" startBytecode="0" endBytecode="177" sourcefile="ConfigurationManager.java" sourcepath="com/paconsulting/puffin/gae/business/ConfigurationManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.ConfigurationManager" start="84" end="84" startBytecode="46" endBytecode="46" sourcefile="ConfigurationManager.java" sourcepath="com/paconsulting/puffin/gae/business/ConfigurationManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.JourneyManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="40" end="222" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.JourneyManager" name="createJourneySegment" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/JourneySegment;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="55" end="79" startBytecode="0" endBytecode="402" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="66" end="66" startBytecode="121" endBytecode="121" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="72" end="72" startBytecode="154" endBytecode="154" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.JourneyManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="40" end="222" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.JourneyManager" name="saveJourneySegment" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/JourneySegment;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="191" end="192" startBytecode="0" endBytecode="66" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="191" end="191" startBytecode="14" endBytecode="14" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.JourneyManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="40" end="222" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.JourneyManager" name="updateJourneySegment" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/JourneySegment;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="107" end="131" startBytecode="0" endBytecode="400" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="119" end="119" startBytecode="135" endBytecode="135" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.JourneyManager" start="125" end="125" startBytecode="177" endBytecode="177" sourcefile="JourneyManager.java" sourcepath="com/paconsulting/puffin/gae/business/JourneyManager.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.OversightManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.OversightManager" start="24" end="188" sourcefile="OversightManager.java" sourcepath="com/paconsulting/puffin/gae/business/OversightManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.OversightManager" name="createOversight" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/Oversight;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.OversightManager" start="42" end="63" startBytecode="0" endBytecode="318" sourcefile="OversightManager.java" sourcepath="com/paconsulting/puffin/gae/business/OversightManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.OversightManager" start="62" end="62" startBytecode="176" endBytecode="176" sourcefile="OversightManager.java" sourcepath="com/paconsulting/puffin/gae/business/OversightManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.OversightManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.OversightManager" start="24" end="188" sourcefile="OversightManager.java" sourcepath="com/paconsulting/puffin/gae/business/OversightManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.OversightManager" name="updateOversight" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/Oversight;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.OversightManager" start="106" end="124" startBytecode="0" endBytecode="252" sourcefile="OversightManager.java" sourcepath="com/paconsulting/puffin/gae/business/OversightManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.OversightManager" start="123" end="123" startBytecode="114" endBytecode="114" sourcefile="OversightManager.java" sourcepath="com/paconsulting/puffin/gae/business/OversightManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.Security">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.Security" start="30" end="159" sourcefile="Security.java" sourcepath="com/paconsulting/puffin/gae/business/Security.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.Security" name="registerUser" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUserAuthentication;Lcom/paconsulting/puffin/gae/beans/UserRegistration;)Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.Security" start="125" end="159" startBytecode="0" endBytecode="508" sourcefile="Security.java" sourcepath="com/paconsulting/puffin/gae/business/Security.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.Security" start="151" end="151" startBytecode="228" endBytecode="228" sourcefile="Security.java" sourcepath="com/paconsulting/puffin/gae/business/Security.java"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.Security" start="154" end="154" startBytecode="257" endBytecode="257" sourcefile="Security.java" sourcepath="com/paconsulting/puffin/gae/business/Security.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.Security" start="157" end="157" startBytecode="287" endBytecode="287" sourcefile="Security.java" sourcepath="com/paconsulting/puffin/gae/business/Security.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE" priority="2" rank="18" abbrev="RCN" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="inviteUser" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/UserInvite;)Lcom/paconsulting/puffin/gae/beans/datastore/UserInvite;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="206" end="239" startBytecode="0" endBytecode="532" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <LocalVariable name="roles" register="3" pc="125" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <Method classname="com.paconsulting.puffin.gae.beans.datastore.UserInvite" name="getRoles" signature="()Ljava/util/List;" isStatic="false" role="METHOD_RETURN_VALUE_OF">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.UserInvite" start="77" end="83" startBytecode="0" endBytecode="227" sourcefile="UserInvite.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/UserInvite.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="224" end="224" startBytecode="126" endBytecode="126" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java" role="SOURCE_REDUNDANT_NULL_CHECK"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="cancelSession" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/Session;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="97" end="99" startBytecode="0" endBytecode="77" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="98" end="98" startBytecode="21" endBytecode="21" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="createSession" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;)Lcom/paconsulting/puffin/gae/beans/datastore/Session;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="64" end="66" startBytecode="0" endBytecode="93" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="65" end="65" startBytecode="26" endBytecode="26" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="getAirQualityRecordFor" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Ljava/lang/Long;)Lcom/paconsulting/puffin/gae/beans/datastore/UserDailyAirQualityRecord;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="369" end="380" startBytecode="0" endBytecode="261" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="378" end="378" startBytecode="133" endBytecode="133" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="getTravelRecordFor" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Ljava/lang/Long;)Lcom/paconsulting/puffin/gae/beans/datastore/UserDailyTravelRecord;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="333" end="343" startBytecode="0" endBytecode="218" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="341" end="341" startBytecode="94" endBytecode="94" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="inviteUser" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Lcom/paconsulting/puffin/gae/beans/datastore/UserInvite;)Lcom/paconsulting/puffin/gae/beans/datastore/UserInvite;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="206" end="239" startBytecode="0" endBytecode="532" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="232" end="232" startBytecode="228" endBytecode="228" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="registerDevice" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Ljava/lang/String;)Lcom/paconsulting/puffin/gae/beans/datastore/Device;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="295" end="299" startBytecode="0" endBytecode="120" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="298" end="298" startBytecode="35" endBytecode="35" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="updateAirQualityRecord" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/UserDailyAirQualityRecord;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="414" end="417" startBytecode="0" endBytecode="84" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="415" end="415" startBytecode="19" endBytecode="19" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="updateSession" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/Session;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="88" end="90" startBytecode="0" endBytecode="87" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="89" end="89" startBytecode="31" endBytecode="31" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="updateTravelRecord" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/UserDailyTravelRecord;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="404" end="407" startBytecode="0" endBytecode="84" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="405" end="405" startBytecode="19" endBytecode="19" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.business.UserManager">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="40" end="417" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.business.UserManager" name="updateUser" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;Z)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="176" end="180" startBytecode="0" endBytecode="132" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.business.UserManager" start="178" end="178" startBytecode="20" endBytecode="20" sourcefile="UserManager.java" sourcepath="com/paconsulting/puffin/gae/business/UserManager.java"/>
+  </BugInstance>
+  <BugInstance type="DLS_DEAD_LOCAL_STORE" priority="2" rank="17" abbrev="DLS" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.servlets.SecurityServlet">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.SecurityServlet" start="25" end="121" sourcefile="SecurityServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/SecurityServlet.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.servlets.SecurityServlet" name="doGet" signature="(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.SecurityServlet" start="35" end="86" startBytecode="0" endBytecode="124" sourcefile="SecurityServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/SecurityServlet.java"/>
+    </Method>
+    <LocalVariable name="role" register="8" pc="180" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.servlets.SecurityServlet" start="71" end="71" startBytecode="178" endBytecode="178" sourcefile="SecurityServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/SecurityServlet.java"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.LOCAL_NAME" value="role"/>
+    <Property name="edu.umd.cs.findbugs.detect.DeadLocalStoreProperty.TWO_STORES_MULTIPLE_LOADS" value="true"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="26" end="155" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" name="createSystemConfigIfNotExists" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/ConfigValue;)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="88" end="94" startBytecode="0" endBytecode="185" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="91" end="91" startBytecode="50" endBytecode="50" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="26" end="155" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" name="createSystemUserRecord" signature="(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="103" end="112" startBytecode="0" endBytecode="209" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="109" end="109" startBytecode="77" endBytecode="77" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="26" end="155" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" name="refreshUserRecords" signature="(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="121" end="134" startBytecode="0" endBytecode="312" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Method>
+    <Method classname="com.googlecode.objectify.Result" name="now" signature="()Ljava/lang/Object;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.googlecode.objectify.Result" sourcefile="Result.java" sourcepath="com/googlecode/objectify/Result.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="132" end="132" startBytecode="121" endBytecode="121" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="26" end="155" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" name="refreshUserRecords" signature="(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="121" end="134" startBytecode="0" endBytecode="312" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Method>
+    <Method classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" name="getAgeRange" signature="()Ljava/lang/Long;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="198" end="198" startBytecode="0" endBytecode="46" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="123" end="123" startBytecode="54" endBytecode="54" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="26" end="155" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" name="refreshUserRecords" signature="(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="121" end="134" startBytecode="0" endBytecode="312" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Method>
+    <Method classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" name="getEmailAddress" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="85" end="85" startBytecode="0" endBytecode="46" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="126" end="126" startBytecode="72" endBytecode="72" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="26" end="155" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" name="refreshUserRecords" signature="(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="121" end="134" startBytecode="0" endBytecode="312" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Method>
+    <Method classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" name="getFamilyName" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="79" end="79" startBytecode="0" endBytecode="46" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="127" end="127" startBytecode="78" endBytecode="78" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT" priority="2" rank="17" abbrev="RV" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="26" end="155" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" name="refreshUserRecords" signature="(Ljavax/servlet/http/HttpServletRequest;Ljavax/servlet/http/HttpServletResponse;)V" isStatic="false">
+      <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="121" end="134" startBytecode="0" endBytecode="312" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+    </Method>
+    <Method classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" name="getGivenName" signature="()Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" start="73" end="73" startBytecode="0" endBytecode="46" sourcefile="PuffinUser.java" sourcepath="com/paconsulting/puffin/gae/beans/datastore/PuffinUser.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.servlets.UpgradeServlet" start="128" end="128" startBytecode="84" endBytecode="84" sourcefile="UpgradeServlet.java" sourcepath="com/paconsulting/puffin/gae/servlets/UpgradeServlet.java"/>
+  </BugInstance>
+  <BugInstance type="NP_LOAD_OF_KNOWN_NULL_VALUE" priority="2" rank="16" abbrev="NP" category="STYLE">
+    <Class classname="com.paconsulting.puffin.gae.utils.Email">
+      <SourceLine classname="com.paconsulting.puffin.gae.utils.Email" start="18" end="67" sourcefile="Email.java" sourcepath="com/paconsulting/puffin/gae/utils/Email.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.utils.Email" name="send" signature="(Lcom/paconsulting/puffin/gae/beans/datastore/EmailTemplate;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;)V" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.utils.Email" start="43" end="48" startBytecode="0" endBytecode="27" sourcefile="Email.java" sourcepath="com/paconsulting/puffin/gae/utils/Email.java"/>
+    </Method>
+    <LocalVariable name="template" register="0" pc="17" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.utils.Email" start="44" end="44" startBytecode="20" endBytecode="20" sourcefile="Email.java" sourcepath="com/paconsulting/puffin/gae/utils/Email.java"/>
+  </BugInstance>
+  <BugInstance type="WMI_WRONG_MAP_ITERATOR" priority="2" rank="18" abbrev="WMI" category="PERFORMANCE">
+    <Class classname="com.paconsulting.puffin.gae.utils.Email">
+      <SourceLine classname="com.paconsulting.puffin.gae.utils.Email" start="18" end="67" sourcefile="Email.java" sourcepath="com/paconsulting/puffin/gae/utils/Email.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.utils.Email" name="replace" signature="(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.utils.Email" start="57" end="67" startBytecode="0" endBytecode="252" sourcefile="Email.java" sourcepath="com/paconsulting/puffin/gae/utils/Email.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.utils.Email" start="64" end="64" startBytecode="61" endBytecode="61" sourcefile="Email.java" sourcepath="com/paconsulting/puffin/gae/utils/Email.java"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" rank="18" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="com.paconsulting.puffin.gae.utils.EndpointUtils">
+      <SourceLine classname="com.paconsulting.puffin.gae.utils.EndpointUtils" start="26" end="176" sourcefile="EndpointUtils.java" sourcepath="com/paconsulting/puffin/gae/utils/EndpointUtils.java"/>
+    </Class>
+    <Method classname="com.paconsulting.puffin.gae.utils.EndpointUtils" name="validateSession" signature="(Ljavax/servlet/http/HttpServletRequest;)Lcom/paconsulting/puffin/gae/beans/datastore/PuffinUser;" isStatic="true">
+      <SourceLine classname="com.paconsulting.puffin.gae.utils.EndpointUtils" start="57" end="103" startBytecode="0" endBytecode="701" sourcefile="EndpointUtils.java" sourcepath="com/paconsulting/puffin/gae/utils/EndpointUtils.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Long" start="701" end="703" startBytecode="0" endBytecode="46" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <Method classname="java.lang.Long" name="valueOf" signature="(Ljava/lang/String;)Ljava/lang/Long;" isStatic="true" role="SHOULD_CALL">
+      <SourceLine classname="java.lang.Long" start="540" end="540" startBytecode="0" endBytecode="33" sourcefile="Long.java" sourcepath="java/lang/Long.java"/>
+    </Method>
+    <SourceLine classname="com.paconsulting.puffin.gae.utils.EndpointUtils" start="63" end="63" startBytecode="30" endBytecode="30" sourcefile="EndpointUtils.java" sourcepath="com/paconsulting/puffin/gae/utils/EndpointUtils.java"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.utils.EndpointUtils" start="81" end="81" startBytecode="150" endBytecode="150" sourcefile="EndpointUtils.java" sourcepath="com/paconsulting/puffin/gae/utils/EndpointUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="com.paconsulting.puffin.gae.utils.EndpointUtils" start="92" end="92" startBytecode="245" endBytecode="245" sourcefile="EndpointUtils.java" sourcepath="com/paconsulting/puffin/gae/utils/EndpointUtils.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Thu, 26 Feb 2015 15:32:57 +0000" total_classes="148" referenced_classes="304" total_bugs="44" total_size="4595" num_packages="13" java_version="1.7.0_76" vm_version="24.76-b04" cpu_seconds="60.58" clock_seconds="21.57" peak_mbytes="295.41" alloc_mbytes="683.00" gc_seconds="0.48" priority_2="43" priority_1="1">
+    <PackageStats package="com.paconsulting.puffin.gae.api" total_bugs="1" total_types="7" total_size="382" priority_2="1">
+      <ClassStats class="com.paconsulting.puffin.gae.api.Authentication" sourceFile="Authentication.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.api.ManageUsers" sourceFile="ManageUsers.java" interface="false" size="131" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.api.Synchronise" sourceFile="Synchronise.java" interface="false" size="31" bugs="1" priority_2="1"/>
+      <ClassStats class="com.paconsulting.puffin.gae.api.SystemAdministration" sourceFile="SystemAdministration.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.api.UserAdministration" sourceFile="UserAdministration.java" interface="false" size="59" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.api.UserAirQuality" sourceFile="UserAirQuality.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.api.UserData" sourceFile="UserData.java" interface="false" size="69" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.beans" total_bugs="2" total_types="11" total_size="259" priority_2="2">
+      <ClassStats class="com.paconsulting.puffin.gae.beans.AirTagReadings" sourceFile="AirTagReadings.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.AirTags" sourceFile="AirTags.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.Configuration" sourceFile="Configuration.java" interface="false" size="71" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.DailyAirQualityRecords" sourceFile="DailyAirQualityRecords.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.DailyTravelRecords" sourceFile="DailyTravelRecords.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.DebugDataWrapper" sourceFile="DebugDataWrapper.java" interface="false" size="17" bugs="2" priority_2="2"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.LatestAirTagReadings" sourceFile="LatestAirTagReadings.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.LongObject" sourceFile="LongObject.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.RegisteredUsers" sourceFile="RegisteredUsers.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.UserInvitations" sourceFile="UserInvitations.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.UserRegistration" sourceFile="UserRegistration.java" interface="false" size="44" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.beans.datastore" total_bugs="4" total_types="38" total_size="1876" priority_2="3" priority_1="1">
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.AirTag" sourceFile="AirTag.java" interface="false" size="103" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.AirTag$FieldNames" sourceFile="AirTag.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.AirTag$Type" sourceFile="AirTag.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.AirTagConfiguration" sourceFile="AirTagConfiguration.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.AirTagReading" sourceFile="AirTagReading.java" interface="false" size="109" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.AirTagReading$FieldNames" sourceFile="AirTagReading.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.CleanMileStub" sourceFile="CleanMileStub.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.CleanMileStub$FieldNames" sourceFile="CleanMileStub.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.ConfigValue" sourceFile="ConfigValue.java" interface="false" size="215" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.ConfigValue$ConfigType" sourceFile="ConfigValue.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.ConfigValue$FieldNames" sourceFile="ConfigValue.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.DebugMessage" sourceFile="DebugMessage.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.DebugMessage$FieldNames" sourceFile="DebugMessage.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.Device" sourceFile="Device.java" interface="false" size="45" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.Device$FieldNames" sourceFile="Device.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.EmailTemplate" sourceFile="EmailTemplate.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.EmailTemplate$FieldNames" sourceFile="EmailTemplate.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.JourneySegment" sourceFile="JourneySegment.java" interface="false" size="173" bugs="1" priority_1="1"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.JourneySegment$FieldNames" sourceFile="JourneySegment.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.JourneySegmentAnalyticalData" sourceFile="JourneySegmentAnalyticalData.java" interface="false" size="73" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.LatestAirTagReading" sourceFile="LatestAirTagReading.java" interface="false" size="132" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.LatestAirTagReading$FieldNames" sourceFile="LatestAirTagReading.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.Oversight" sourceFile="Oversight.java" interface="false" size="97" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.Oversight$Fieldnames" sourceFile="Oversight.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.Oversight$State" sourceFile="Oversight.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.Oversight$Type" sourceFile="Oversight.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.PuffinUser" sourceFile="PuffinUser.java" interface="false" size="165" bugs="2" priority_2="2"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.PuffinUser$FieldNames" sourceFile="PuffinUser.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.PuffinUserAuthentication" sourceFile="PuffinUserAuthentication.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.PuffinUserAuthentication$Source" sourceFile="PuffinUserAuthentication.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.Session" sourceFile="Session.java" interface="false" size="62" bugs="1" priority_2="1"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.Session$FieldNames" sourceFile="Session.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.UserDailyAirQualityRecord" sourceFile="UserDailyAirQualityRecord.java" interface="false" size="128" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.UserDailyAirQualityRecord$FieldNames" sourceFile="UserDailyAirQualityRecord.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.UserDailyTravelRecord" sourceFile="UserDailyTravelRecord.java" interface="false" size="77" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.UserDailyTravelRecord$FieldNames" sourceFile="UserDailyTravelRecord.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.UserInvite" sourceFile="UserInvite.java" interface="false" size="69" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.beans.datastore.UserInvite$FieldNames" sourceFile="UserInvite.java" interface="false" size="10" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.business" total_bugs="26" total_types="9" total_size="717" priority_2="26">
+      <ClassStats class="com.paconsulting.puffin.gae.business.AirTagManager" sourceFile="AirTagManager.java" interface="false" size="186" bugs="6" priority_2="6"/>
+      <ClassStats class="com.paconsulting.puffin.gae.business.CleanMileManager" sourceFile="CleanMileManager.java" interface="false" size="34" bugs="1" priority_2="1"/>
+      <ClassStats class="com.paconsulting.puffin.gae.business.ConfigurationManager" sourceFile="ConfigurationManager.java" interface="false" size="69" bugs="2" priority_2="2"/>
+      <ClassStats class="com.paconsulting.puffin.gae.business.JourneyManager" sourceFile="JourneyManager.java" interface="false" size="81" bugs="3" priority_2="3"/>
+      <ClassStats class="com.paconsulting.puffin.gae.business.OversightManager" sourceFile="OversightManager.java" interface="false" size="68" bugs="2" priority_2="2"/>
+      <ClassStats class="com.paconsulting.puffin.gae.business.Security" sourceFile="Security.java" interface="false" size="63" bugs="1" priority_2="1"/>
+      <ClassStats class="com.paconsulting.puffin.gae.business.Security$Permissions" sourceFile="Security.java" interface="false" size="38" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.business.TaskQueueManager" sourceFile="TaskQueueManager.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.business.UserManager" sourceFile="UserManager.java" interface="false" size="149" bugs="11" priority_2="11"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.constants" total_bugs="0" total_types="33" total_size="143">
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames" sourceFile="ConfigPropertyNames.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames$AirTag" sourceFile="ConfigPropertyNames.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames$AirTag$Thresholds" sourceFile="ConfigPropertyNames.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames$General" sourceFile="ConfigPropertyNames.java" interface="true" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames$User" sourceFile="ConfigPropertyNames.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames$User$Application" sourceFile="ConfigPropertyNames.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames$User$Debug" sourceFile="ConfigPropertyNames.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames$User$Debug$Journey" sourceFile="ConfigPropertyNames.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames$User$Debug$Oversight" sourceFile="ConfigPropertyNames.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.ConfigPropertyNames$User$JourneyModule" sourceFile="ConfigPropertyNames.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.EmailConstants" sourceFile="EmailConstants.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.EmailConstants$Properties" sourceFile="EmailConstants.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.EmailConstants$TemplateNames" sourceFile="EmailConstants.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Enums" sourceFile="Enums.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Enums$TravelMethods" sourceFile="Enums.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Enums$UserRoles" sourceFile="Enums.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.EnvironmentSpecificConstants" sourceFile="EnvironmentSpecificConstants.java" interface="true" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Forms" sourceFile="Forms.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Forms$Admin" sourceFile="Forms.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Forms$Admin$InviteUser" sourceFile="Forms.java" interface="true" size="8" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Forms$Admin$Security" sourceFile="Forms.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Forms$Common" sourceFile="Forms.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Forms$Homepage" sourceFile="Forms.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.Forms$Register" sourceFile="Forms.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.JSPs" sourceFile="JSPs.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.JSPs$Admin" sourceFile="JSPs.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.JSPs$Homepage" sourceFile="JSPs.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.MiscConstants" sourceFile="MiscConstants.java" interface="true" size="12" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.URLs" sourceFile="URLs.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.URLs$Admin" sourceFile="URLs.java" interface="true" size="3" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.URLs$Admin$Tasks" sourceFile="URLs.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.URLs$Partners" sourceFile="URLs.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.constants.URLs$Users" sourceFile="URLs.java" interface="true" size="1" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.db" total_bugs="0" total_types="2" total_size="13">
+      <ClassStats class="com.paconsulting.puffin.gae.db.Upgrade" sourceFile="Upgrade.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.db.UpgradeManager" sourceFile="UpgradeManager.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.db.upgrades" total_bugs="0" total_types="1" total_size="168">
+      <ClassStats class="com.paconsulting.puffin.gae.db.upgrades.Sprint2" sourceFile="Sprint2.java" interface="false" size="168" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.exceptions" total_bugs="0" total_types="18" total_size="126">
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.AccountAlreadyRegisteredException" sourceFile="AccountAlreadyRegisteredException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.AccountNotRegisteredException" sourceFile="AccountNotRegisteredException.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.AddressAlreadyInvitedException" sourceFile="AddressAlreadyInvitedException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.AddressNotInvitedException" sourceFile="AddressNotInvitedException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.GoogleAccountAlreadyRegisteredException" sourceFile="GoogleAccountAlreadyRegisteredException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.InvalidSessionException" sourceFile="InvalidSessionException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.NotImplementedException" sourceFile="NotImplementedException.java" interface="false" size="6" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.OversightPendingException" sourceFile="OversightPendingException.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.OversightRequiredException" sourceFile="OversightRequiredException.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.RecordDoesNotExistException" sourceFile="RecordDoesNotExistException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.RecordExistsException" sourceFile="RecordExistsException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.RecordMisMatchException" sourceFile="RecordMisMatchException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.SessionExpiredException" sourceFile="SessionExpiredException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.UnknownDeviceException" sourceFile="UnknownDeviceException.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.UserBlockedException" sourceFile="UserBlockedException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.UserNotAuthenticatedException" sourceFile="UserNotAuthenticatedException.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.UserNotAuthorisedException" sourceFile="UserNotAuthorisedException.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.exceptions.UserNotLoggedInException" sourceFile="UserNotLoggedInException.java" interface="false" size="5" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.filters" total_bugs="0" total_types="1" total_size="37">
+      <ClassStats class="com.paconsulting.puffin.gae.filters.AuthFilter" sourceFile="AuthFilter.java" interface="false" size="37" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.servlets" total_bugs="8" total_types="5" total_size="255" priority_2="8">
+      <ClassStats class="com.paconsulting.puffin.gae.servlets.HomepageServlet" sourceFile="HomepageServlet.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.servlets.InviteUserServlet" sourceFile="InviteUserServlet.java" interface="false" size="43" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.servlets.RegisterUserServlet" sourceFile="RegisterUserServlet.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.servlets.SecurityServlet" sourceFile="SecurityServlet.java" interface="false" size="57" bugs="1" priority_2="1"/>
+      <ClassStats class="com.paconsulting.puffin.gae.servlets.UpgradeServlet" sourceFile="UpgradeServlet.java" interface="false" size="85" bugs="7" priority_2="7"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.tasks" total_bugs="0" total_types="5" total_size="175">
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.BaseTask" sourceFile="BaseTask.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.JourneySegmentProcessor" sourceFile="JourneySegmentProcessor.java" interface="false" size="67" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.JourneySegmentProcessor$Properties" sourceFile="JourneySegmentProcessor.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.SendEmail" sourceFile="SendEmail.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.SendEmail$Properties" sourceFile="SendEmail.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.tasks.upgrades" total_bugs="0" total_types="9" total_size="187">
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.upgrades.ExecuteUpgradeFlagsTask" sourceFile="ExecuteUpgradeFlagsTask.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.upgrades.ExecuteUpgradeFlagsTask$Kinds" sourceFile="ExecuteUpgradeFlagsTask.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.upgrades.ExecuteUpgradeFlagsTask$Properties" sourceFile="ExecuteUpgradeFlagsTask.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.upgrades.RemoveUpgradeFlagsTask" sourceFile="RemoveUpgradeFlagsTask.java" interface="false" size="40" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.upgrades.RemoveUpgradeFlagsTask$Kinds" sourceFile="RemoveUpgradeFlagsTask.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.upgrades.RemoveUpgradeFlagsTask$Properties" sourceFile="RemoveUpgradeFlagsTask.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.upgrades.UpgradeTask" sourceFile="UpgradeTask.java" interface="false" size="48" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.upgrades.UpgradeTask$Kinds" sourceFile="UpgradeTask.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.tasks.upgrades.UpgradeTask$Properties" sourceFile="UpgradeTask.java" interface="false" size="8" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.paconsulting.puffin.gae.utils" total_bugs="3" total_types="9" total_size="257" priority_2="3">
+      <ClassStats class="com.paconsulting.puffin.gae.utils.DateUtils" sourceFile="DateUtils.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.utils.DistanceCalculator" sourceFile="DistanceCalculator.java" interface="false" size="22" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.utils.DistanceCalculator$Unit" sourceFile="DistanceCalculator.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.utils.Email" sourceFile="Email.java" interface="false" size="26" bugs="2" priority_2="2"/>
+      <ClassStats class="com.paconsulting.puffin.gae.utils.EndpointUtils" sourceFile="EndpointUtils.java" interface="false" size="73" bugs="1" priority_2="1"/>
+      <ClassStats class="com.paconsulting.puffin.gae.utils.OfyService" sourceFile="OfyService.java" interface="false" size="31" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.utils.ServletUtils" sourceFile="ServletUtils.java" interface="false" size="61" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.utils.StringUtils" sourceFile="StringUtils.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="com.paconsulting.puffin.gae.utils.SystemUtils" sourceFile="SystemUtils.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="1249" invocations="1043" avgMicrosecondsPerInvocation="1197" maxMicrosecondsPerInvocation="33504" standardDeviationMircosecondsPerInvocation="2366"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="1072" invocations="946" avgMicrosecondsPerInvocation="1133" maxMicrosecondsPerInvocation="36934" standardDeviationMircosecondsPerInvocation="2461"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="1062" invocations="304" avgMicrosecondsPerInvocation="3496" maxMicrosecondsPerInvocation="85946" standardDeviationMircosecondsPerInvocation="7878"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="1041" invocations="304" avgMicrosecondsPerInvocation="3424" maxMicrosecondsPerInvocation="96094" standardDeviationMircosecondsPerInvocation="8123"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="877" invocations="946" avgMicrosecondsPerInvocation="927" maxMicrosecondsPerInvocation="21479" standardDeviationMircosecondsPerInvocation="1815"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="843" invocations="946" avgMicrosecondsPerInvocation="891" maxMicrosecondsPerInvocation="200793" standardDeviationMircosecondsPerInvocation="6641"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="742" invocations="1227" avgMicrosecondsPerInvocation="604" maxMicrosecondsPerInvocation="26560" standardDeviationMircosecondsPerInvocation="1705"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="730" invocations="946" avgMicrosecondsPerInvocation="771" maxMicrosecondsPerInvocation="19357" standardDeviationMircosecondsPerInvocation="1375"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="704" invocations="960" avgMicrosecondsPerInvocation="733" maxMicrosecondsPerInvocation="18054" standardDeviationMircosecondsPerInvocation="1559"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="701" invocations="960" avgMicrosecondsPerInvocation="731" maxMicrosecondsPerInvocation="19026" standardDeviationMircosecondsPerInvocation="1661"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="509" invocations="626" avgMicrosecondsPerInvocation="814" maxMicrosecondsPerInvocation="18395" standardDeviationMircosecondsPerInvocation="1476"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="479" invocations="304" avgMicrosecondsPerInvocation="1576" maxMicrosecondsPerInvocation="36324" standardDeviationMircosecondsPerInvocation="3263"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="396" invocations="1047" avgMicrosecondsPerInvocation="379" maxMicrosecondsPerInvocation="9283" standardDeviationMircosecondsPerInvocation="336"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="377" invocations="304" avgMicrosecondsPerInvocation="1241" maxMicrosecondsPerInvocation="16220" standardDeviationMircosecondsPerInvocation="2339"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="365" invocations="963" avgMicrosecondsPerInvocation="379" maxMicrosecondsPerInvocation="7117" standardDeviationMircosecondsPerInvocation="709"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="351" invocations="387" avgMicrosecondsPerInvocation="907" maxMicrosecondsPerInvocation="58098" standardDeviationMircosecondsPerInvocation="3540"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="307" invocations="948" avgMicrosecondsPerInvocation="324" maxMicrosecondsPerInvocation="92705" standardDeviationMircosecondsPerInvocation="3014"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="292" invocations="946" avgMicrosecondsPerInvocation="309" maxMicrosecondsPerInvocation="10056" standardDeviationMircosecondsPerInvocation="697"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildStringPassthruGraph" totalMilliseconds="249" invocations="304" avgMicrosecondsPerInvocation="820" maxMicrosecondsPerInvocation="15764" standardDeviationMircosecondsPerInvocation="1932"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="249" invocations="304" avgMicrosecondsPerInvocation="819" maxMicrosecondsPerInvocation="18698" standardDeviationMircosecondsPerInvocation="2178"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.CalledMethods" totalMilliseconds="247" invocations="304" avgMicrosecondsPerInvocation="813" maxMicrosecondsPerInvocation="22693" standardDeviationMircosecondsPerInvocation="1859"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="231" invocations="304" avgMicrosecondsPerInvocation="760" maxMicrosecondsPerInvocation="23782" standardDeviationMircosecondsPerInvocation="1952"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.TypeQualifierNullnessAnnotationDatabase" totalMilliseconds="194" invocations="13342" avgMicrosecondsPerInvocation="14" maxMicrosecondsPerInvocation="2819" standardDeviationMircosecondsPerInvocation="38"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.LiveLocalStoreDataflowFactory" totalMilliseconds="194" invocations="946" avgMicrosecondsPerInvocation="205" maxMicrosecondsPerInvocation="6773" standardDeviationMircosecondsPerInvocation="407"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.DumbMethods" totalMilliseconds="184" invocations="148" avgMicrosecondsPerInvocation="1246" maxMicrosecondsPerInvocation="12782" standardDeviationMircosecondsPerInvocation="1795"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.ReflectiveClasses" totalMilliseconds="183" invocations="304" avgMicrosecondsPerInvocation="604" maxMicrosecondsPerInvocation="19154" standardDeviationMircosecondsPerInvocation="1483"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindInconsistentSync2" totalMilliseconds="168" invocations="148" avgMicrosecondsPerInvocation="1137" maxMicrosecondsPerInvocation="10895" standardDeviationMircosecondsPerInvocation="1985"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FormatStringChecker" totalMilliseconds="168" invocations="148" avgMicrosecondsPerInvocation="1137" maxMicrosecondsPerInvocation="128236" standardDeviationMircosecondsPerInvocation="10489"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
