@@ -1,0 +1,1 @@
+{"builders":{"default":"ant"},"runners":{"configs":{"system:/java/codenvy-cli":{"ram":256,"variables":{},"options":{}}},"default":"system:/java/codenvy-cli"},"description":"Uploads JUnit, Cobertura, Findbugs, and Checkstyle metrics in detail to Librato","type":"ant","attributes":{}}
