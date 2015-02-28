@@ -1,0 +1,2211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="testing-worker-linux-40500720-1-8412-linux-6-14178809" id="0" name="TestAirQualitySynchronisation" package="com.paconsulting.puffin.gae.test.business" tests="11" time="3.839" timestamp="2015-02-26T15:32:40">
+      <properties>
+          <property name="env.OLDPWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="env.rvm_bin_path" value="/home/travis/.rvm/bin" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre" />
+
+          <property name="env.TRAVIS_JOB_NUMBER" value="211.1" />
+
+          <property name="test.src.dir" value="/home/travis/build/draysontechnologies/Zen/test" />
+
+          <property name="config.dir" value="/home/travis/build/draysontechnologies/Zen/conf" />
+
+          <property name="env.SSH_TTY" value="/dev/pts/0" />
+
+          <property name="env.XDG_SESSION_COOKIE" value="c630043e25b11e96790dbbc800000537-1424964679.585115-1063748677" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed" />
+
+          <property name="env.LOGNAME" value="travis" />
+
+          <property name="env.rvm_with_default_gems" value="rake=~&gt;10.2.2 bundler=~&gt;1.6.0" />
+
+          <property name="src.dir" value="/home/travis/build/draysontechnologies/Zen/src" />
+
+          <property name="env._system_version" value="12.04" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="timestamp" value="2015-02-26_15-32-26" />
+
+          <property name="java.version" value="1.7.0_76" />
+
+          <property name="coverage.reports" value="/home/travis/build/draysontechnologies/Zen/reports/cobertura" />
+
+          <property name="env.NVM_PATH" value="/home/travis/.nvm/v0.10.36/lib/node" />
+
+          <property name="env.TRAVIS_SECURE_ENV_VARS" value="true" />
+
+          <property name="env._system_type" value="Linux" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SSH_CLIENT" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 22" />
+
+          <property name="env.GEM_HOME" value="/home/travis/.rvm/gems/ruby-1.9.3-p551" />
+
+          <property name="env.HAS_ANTARES_THREE_LITTLE_FRONZIES_BADGE" value="true" />
+
+          <property name="env.PS4" value="+" />
+
+          <property name="env.IS_LIVE" value="false" />
+
+          <property name="ant.project.invoked-targets" value="setup-for-dev" />
+
+          <property name="env.TRAVIS_REPO_SLUG" value="draysontechnologies/Zen" />
+
+          <property name="buildConf.dir" value="/home/travis/build/draysontechnologies/Zen/build-conf" />
+
+          <property name="instrumented.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes" />
+
+          <property name="env.RUBY_VERSION" value="ruby-1.9.3-p551" />
+
+          <property name="user.name" value="travis" />
+
+          <property name="env.LANG" value="en_US.UTF-8" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ant.log" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="BRANCH_SAFE" value="develop" />
+
+          <property name="env.DEBIAN_FRONTEND" value="noninteractive" />
+
+          <property name="env.SSH_CONNECTION" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 2607:f700:8001:134:5b8b:ebf8:a920:162b 22" />
+
+          <property name="lib.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib" />
+
+          <property name="env.LC_ALL" value="en_US.UTF-8" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="ant.project.default-target" value="compile" />
+
+          <property name="env.GIT_ASKPASS" value="echo" />
+
+          <property name="env.HOME" value="/home/travis" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/travis/build/draysontechnologies/Zen/junittestcases5785809080420495944.properties filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/travis/build/draysontechnologies/Zen/reports/junit/IGNORETHIS.xml crashfile=/home/travis/build/draysontechnologies/Zen/junitvmwatcher991711785886873338.properties propsfile=/home/travis/build/draysontechnologies/Zen/junit4776079284660931739.properties" />
+
+          <property name="env.MANPATH" value="/home/travis/.nvm/v0.10.36/share/man:/usr/local/clang-3.4/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man" />
+
+          <property name="env.COMPOSER_NO_INTERACTION" value="1" />
+
+          <property name="ant.file" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.NVM_NODEJS_ORG_MIRROR" value="https://nodejs.org/dist" />
+
+          <property name="jslint.reports" value="/home/travis/build/draysontechnologies/Zen/reports/jslint.xml" />
+
+          <property name="ant.file.type.Puffin Portals" value="file" />
+
+          <property name="env.TRAVIS_COMMIT_RANGE" value="34bfabb16687...c6b35e5c641e" />
+
+          <property name="env._system_name" value="Ubuntu" />
+
+          <property name="sdk.dir" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env._" value="/usr/bin/ant" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="TODAY" value="February 26 2015" />
+
+          <property name="user.language" value="en" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER" value="0-1-211" />
+
+          <property name="env.GOROOT" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64" />
+
+          <property name="line.separator" value=" " />
+
+          <property name="env.TRAVIS_BUILD_DIR" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="env.SSH_AGENT_PID" value="2191" />
+
+          <property name="ant.file.Puffin Portals" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.GAE_SDK" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env.MERB_ENV" value="test" />
+
+          <property name="env.NVM_IOJS_ORG_VERSION_LISTING" value="https://iojs.org/dist/index.tab" />
+
+          <property name="findbugs.reports" value="/home/travis/build/draysontechnologies/Zen/reports/findbugs.xml" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.log.filename" value="build_2015-02-26_15-32-26.log" />
+
+          <property name="env.GAE_PASSWORD" value="F@stracingB12" />
+
+          <property name="junit.reports" value="/home/travis/build/draysontechnologies/Zen/reports/junit" />
+
+          <property name="cobertura.dir" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="test.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes" />
+
+          <property name="env.rvm_path" value="/home/travis/.rvm" />
+
+          <property name="env.GEM_PATH" value="/home/travis/.rvm/gems/ruby-1.9.3-p551:/home/travis/.rvm/gems/ruby-1.9.3-p551@global" />
+
+          <property name="env.rvm_loaded_flag" value="1" />
+
+          <property name="cobertura.file" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="env.NVM_IOJS_ORG_MIRROR" value="https://iojs.org/dist" />
+
+          <property name="env.rvm_user_install_flag" value="1" />
+
+          <property name="env.rvm_stored_umask" value="0002" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.rvm_version" value="1.26.8 (1.26.8)" />
+
+          <property name="env.TERM" value="xterm" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="env.TRAVIS_BUILD_NUMBER" value="211" />
+
+          <property name="env.CI" value="true" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="env.rvm_prefix" value="/home/travis" />
+
+          <property name="env.PATH" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.36/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin" />
+
+          <property name="env.TRAVIS_OS_NAME" value="linux" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="basedir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="env.SHLVL" value="4" />
+
+          <property name="env.RACK_ENV" value="test" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER_FRIENDLY" value="0.1.211" />
+
+          <property name="ant.home" value="/usr/share/ant" />
+
+          <property name="env.NVM_DIR" value="/home/travis/.nvm" />
+
+          <property name="env.rvm_silence_path_mismatch_check_flag" value="1" />
+
+          <property name="env.TRAVIS_BUILD_ID" value="9786431" />
+
+          <property name="env.COBERTURADIR" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="env.NVM_BIN" value="/home/travis/.nvm/v0.10.36/bin" />
+
+          <property name="env.LIBRATO_USER" value="geoff.willinghamg@paconsulting.com" />
+
+          <property name="env.FINDBUGSDIR" value="/home/travis/build/draysontechnologies/Zen/findbugs-3.0.1-rc1" />
+
+          <property name="env.TRAVIS_COMMIT" value="c6b35e5c641ef6d05816262205a17bfc3faae34a" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env._system_arch" value="x86_64" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64" />
+
+          <property name="build.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="env.USER" value="travis" />
+
+          <property name="webinf.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF" />
+
+          <property name="env.TRAVIS_PULL_REQUEST" value="false" />
+
+          <property name="ant.project.name" value="Puffin Portals" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="env.rvm_project_rvmrc" value="0" />
+
+          <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="env.MY_RUBY_HOME" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="env.GAE_EMAIL" value="travis-ci@draysontechnologies.com" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="os.version" value="2.6.32-042stab090.5" />
+
+          <property name="env.rvm_max_time_flag" value="5" />
+
+          <property name="user.home" value="/home/travis" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="env.TRAVIS_TAG" value="" />
+
+          <property name="checkstyle.reports" value="/home/travis/build/draysontechnologies/Zen/reports/checkstyle.xml" />
+
+          <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-7-oracle" />
+
+          <property name="user.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+
+          <property name="env.MAIL" value="/var/mail/travis" />
+
+          <property name="env.PWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.rvm_autoupdate_flag" value="0" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="isLive" value="false" />
+
+          <property name="env.RAILS_ENV" value="test" />
+
+          <property name="java.vm.version" value="24.76-b04" />
+
+          <property name="java.class.path" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-1.0-sdk-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints-deps.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-gcs-client-0.4.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.10.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/asm-4.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/commons-logging-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jdo-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jpa-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-1.0.10.final.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-2.1.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-jpa-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_2.0_spec-1.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1-rev22-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1beta2-rev67-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jdo-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/gson-2.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/guava-18.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpclient-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpcore-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-2.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-asl-1.9.11.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo-api-3.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo2-api-2.3-eb.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/joda-time-2.6.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/json.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr107cache-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr305-1.3.9.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jta-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/junit-4.8.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/libservice.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/objectify-4.0rc2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/protobuf-java-2.4.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/transaction-api-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/xpp3-1.1.4c.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-javadoc.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-sources.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-analysis-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-commons-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-tree-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-util-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/dom4j-1.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/icu4j-2.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jaxen-1.1-beta-8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jdom-1.0.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-util-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/log4j-1.2.9.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/oro-2.0.8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/servlet-api-2.5-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/tagsoup-0.9.7.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xmlParserAPIs-2.6.2.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xom-1.0b3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/agent/appengine-agentruntime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-stubs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-local-runtime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/google_sql.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/testing/appengine-testing.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+
+          <property name="DSTAMP" value="20150226" />
+
+          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="env.TRAVIS_LANGUAGE" value="java" />
+
+          <property name="env.CONTINUOUS_INTEGRATION" value="true" />
+
+          <property name="build.log.dir" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes" />
+
+          <property name="env.rvm_without_gems" value="rubygems-bundler" />
+
+          <property name="env.LIBRATO_TOKEN" value="0593b93f7cdc1df17e43e45e56f59b1d7d3f6761621f37e48fd2409b3ec7d04e" />
+
+          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="TSTAMP" value="1532" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.runtime.version" value="1.7.0_76-b13" />
+
+          <property name="reports.dir" value="/home/travis/build/draysontechnologies/Zen/reports" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes" />
+
+          <property name="env.SSH_AUTH_SOCK" value="/tmp/ssh-YlBxgmmn2190/agent.2190" />
+
+          <property name="env.HAS_JOSH_K_SEAL_OF_APPROVAL" value="true" />
+
+          <property name="env.TRAVIS_BRANCH" value="develop" />
+
+          <property name="env.TRAVIS_JOB_ID" value="14178809" />
+
+          <property name="user.country" value="US" />
+
+          <property name="env.SHELL" value="/bin/bash" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="env.JRUBY_OPTS" value="--client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="env.TRAVIS" value="true" />
+
+          <property name="env.IRBRC" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551/.irbrc" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+      </properties>
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testDailyRecordOneGreen" time="1.697" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testDailyRecordOneAmber" time="0.21" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testDailyRecordOneRed" time="0.197" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testDailyRecordOneGreenAmberRed" time="0.195" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testDailyRecordSixGreenFourAmberTwoRed" time="0.269" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testDailyRecordAppendToExistingRecord" time="0.239" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testSynchroniseEmptyList" time="0.116" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testSynchroniseNullList" time="0.117" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testSynchronisingSameDataTwice" time="0.243" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testSynchronisationForBeacon" time="0.197" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestAirQualitySynchronisation" name="testSynchronisationOfDataOverTwoDays" time="0.217" />
+
+      <system-out><![CDATA[UDAQR: id [2], start [1424908800000], end [1424995199000], low [0], med [0], high [0],
+]]></system-out>
+
+      <system-err><![CDATA[Feb 26, 2015 3:32:41 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:41 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:41 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:41 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:41 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964761559], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:41 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [1] readings.
+Feb 26, 2015 3:32:41 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964761919], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762062], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [1] readings.
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762136], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762260], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [1] readings.
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762333], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762444], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [3] readings.
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762530], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762633], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [12] readings.
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762800], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762899], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [3] readings.
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762974], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:42 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964762979], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [3] readings.
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964763040], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:43 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964763152], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:43 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Tried to synchronise a null reading list - returning null.
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964763268], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:43 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964763363], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [3] readings.
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964763435], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Loading (reading) [3] readings previously synchronised.
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964763516], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:43 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [TEST-BEACON], air tag type [AIRBEACON]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [12] readings.
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964763710], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:43 PM com.google.appengine.api.datastore.dev.LocalDatastoreService init
+INFO: Local Datastore initialized: 
+	Type: Master/Slave
+	Storage: In-memory
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising Air Quality readings.  user [Forename Surname], air tag identifier [Test], air tag type [AIRTAG]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Air Tag Configuration [null]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424878363791], morning timestamp [1424822400000]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964763791], morning timestamp [1424908800000]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [285.0], Offset CO ADC [285.0], Corrected CO ADC [11.0], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [10.097661660524366], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [450.0], Offset CO ADC [450.0], Corrected CO ADC [54.42105263157896], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [49.95685242575214], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager correctReading
+INFO: Corrected Air Tag Reading: CO ADC [1100.0], Offset CO ADC [1100.0], Corrected CO ADC [225.47368421052636], Temp ADC [153.0], Temp Correction Factor [0.9179692418658515], CO PPM [206.97790695543728], Temp C [22.709900000000005]
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.AirTagManager synchronise
+INFO: Synchronising (writing) [12] readings.
+Feb 26, 2015 3:32:43 PM com.paconsulting.puffin.gae.business.UserManager getAirQualityRecordFor
+INFO: get UDAQR: timestamp [1424964763932], morning timestamp [1424908800000]
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="testing-worker-linux-40500720-1-8412-linux-6-14178809" id="1" name="TestConfigurationManager" package="com.paconsulting.puffin.gae.test.business" tests="3" time="0.275" timestamp="2015-02-26T15:32:43">
+      <properties>
+          <property name="env.OLDPWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="env.rvm_bin_path" value="/home/travis/.rvm/bin" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre" />
+
+          <property name="env.TRAVIS_JOB_NUMBER" value="211.1" />
+
+          <property name="test.src.dir" value="/home/travis/build/draysontechnologies/Zen/test" />
+
+          <property name="config.dir" value="/home/travis/build/draysontechnologies/Zen/conf" />
+
+          <property name="env.SSH_TTY" value="/dev/pts/0" />
+
+          <property name="env.XDG_SESSION_COOKIE" value="c630043e25b11e96790dbbc800000537-1424964679.585115-1063748677" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed" />
+
+          <property name="env.LOGNAME" value="travis" />
+
+          <property name="env.rvm_with_default_gems" value="rake=~&gt;10.2.2 bundler=~&gt;1.6.0" />
+
+          <property name="src.dir" value="/home/travis/build/draysontechnologies/Zen/src" />
+
+          <property name="env._system_version" value="12.04" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="timestamp" value="2015-02-26_15-32-26" />
+
+          <property name="java.version" value="1.7.0_76" />
+
+          <property name="coverage.reports" value="/home/travis/build/draysontechnologies/Zen/reports/cobertura" />
+
+          <property name="env.NVM_PATH" value="/home/travis/.nvm/v0.10.36/lib/node" />
+
+          <property name="env.TRAVIS_SECURE_ENV_VARS" value="true" />
+
+          <property name="env._system_type" value="Linux" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SSH_CLIENT" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 22" />
+
+          <property name="env.GEM_HOME" value="/home/travis/.rvm/gems/ruby-1.9.3-p551" />
+
+          <property name="env.HAS_ANTARES_THREE_LITTLE_FRONZIES_BADGE" value="true" />
+
+          <property name="env.PS4" value="+" />
+
+          <property name="env.IS_LIVE" value="false" />
+
+          <property name="ant.project.invoked-targets" value="setup-for-dev" />
+
+          <property name="env.TRAVIS_REPO_SLUG" value="draysontechnologies/Zen" />
+
+          <property name="buildConf.dir" value="/home/travis/build/draysontechnologies/Zen/build-conf" />
+
+          <property name="instrumented.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes" />
+
+          <property name="env.RUBY_VERSION" value="ruby-1.9.3-p551" />
+
+          <property name="user.name" value="travis" />
+
+          <property name="env.LANG" value="en_US.UTF-8" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ant.log" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="BRANCH_SAFE" value="develop" />
+
+          <property name="env.DEBIAN_FRONTEND" value="noninteractive" />
+
+          <property name="env.SSH_CONNECTION" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 2607:f700:8001:134:5b8b:ebf8:a920:162b 22" />
+
+          <property name="lib.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib" />
+
+          <property name="env.LC_ALL" value="en_US.UTF-8" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="ant.project.default-target" value="compile" />
+
+          <property name="env.GIT_ASKPASS" value="echo" />
+
+          <property name="env.HOME" value="/home/travis" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/travis/build/draysontechnologies/Zen/junittestcases5785809080420495944.properties filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/travis/build/draysontechnologies/Zen/reports/junit/IGNORETHIS.xml crashfile=/home/travis/build/draysontechnologies/Zen/junitvmwatcher991711785886873338.properties propsfile=/home/travis/build/draysontechnologies/Zen/junit4776079284660931739.properties" />
+
+          <property name="env.MANPATH" value="/home/travis/.nvm/v0.10.36/share/man:/usr/local/clang-3.4/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man" />
+
+          <property name="env.COMPOSER_NO_INTERACTION" value="1" />
+
+          <property name="ant.file" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.NVM_NODEJS_ORG_MIRROR" value="https://nodejs.org/dist" />
+
+          <property name="jslint.reports" value="/home/travis/build/draysontechnologies/Zen/reports/jslint.xml" />
+
+          <property name="ant.file.type.Puffin Portals" value="file" />
+
+          <property name="env.TRAVIS_COMMIT_RANGE" value="34bfabb16687...c6b35e5c641e" />
+
+          <property name="env._system_name" value="Ubuntu" />
+
+          <property name="sdk.dir" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env._" value="/usr/bin/ant" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="TODAY" value="February 26 2015" />
+
+          <property name="user.language" value="en" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER" value="0-1-211" />
+
+          <property name="env.GOROOT" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64" />
+
+          <property name="line.separator" value=" " />
+
+          <property name="env.TRAVIS_BUILD_DIR" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="env.SSH_AGENT_PID" value="2191" />
+
+          <property name="ant.file.Puffin Portals" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.GAE_SDK" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env.MERB_ENV" value="test" />
+
+          <property name="env.NVM_IOJS_ORG_VERSION_LISTING" value="https://iojs.org/dist/index.tab" />
+
+          <property name="findbugs.reports" value="/home/travis/build/draysontechnologies/Zen/reports/findbugs.xml" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.log.filename" value="build_2015-02-26_15-32-26.log" />
+
+          <property name="env.GAE_PASSWORD" value="F@stracingB12" />
+
+          <property name="junit.reports" value="/home/travis/build/draysontechnologies/Zen/reports/junit" />
+
+          <property name="cobertura.dir" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="test.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes" />
+
+          <property name="env.rvm_path" value="/home/travis/.rvm" />
+
+          <property name="env.GEM_PATH" value="/home/travis/.rvm/gems/ruby-1.9.3-p551:/home/travis/.rvm/gems/ruby-1.9.3-p551@global" />
+
+          <property name="env.rvm_loaded_flag" value="1" />
+
+          <property name="cobertura.file" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="env.NVM_IOJS_ORG_MIRROR" value="https://iojs.org/dist" />
+
+          <property name="env.rvm_user_install_flag" value="1" />
+
+          <property name="env.rvm_stored_umask" value="0002" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.rvm_version" value="1.26.8 (1.26.8)" />
+
+          <property name="env.TERM" value="xterm" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="env.TRAVIS_BUILD_NUMBER" value="211" />
+
+          <property name="env.CI" value="true" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="env.rvm_prefix" value="/home/travis" />
+
+          <property name="env.PATH" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.36/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin" />
+
+          <property name="env.TRAVIS_OS_NAME" value="linux" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="basedir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="env.SHLVL" value="4" />
+
+          <property name="env.RACK_ENV" value="test" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER_FRIENDLY" value="0.1.211" />
+
+          <property name="ant.home" value="/usr/share/ant" />
+
+          <property name="env.NVM_DIR" value="/home/travis/.nvm" />
+
+          <property name="env.rvm_silence_path_mismatch_check_flag" value="1" />
+
+          <property name="env.TRAVIS_BUILD_ID" value="9786431" />
+
+          <property name="env.COBERTURADIR" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="env.NVM_BIN" value="/home/travis/.nvm/v0.10.36/bin" />
+
+          <property name="env.LIBRATO_USER" value="geoff.willinghamg@paconsulting.com" />
+
+          <property name="env.FINDBUGSDIR" value="/home/travis/build/draysontechnologies/Zen/findbugs-3.0.1-rc1" />
+
+          <property name="env.TRAVIS_COMMIT" value="c6b35e5c641ef6d05816262205a17bfc3faae34a" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env._system_arch" value="x86_64" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64" />
+
+          <property name="build.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="env.USER" value="travis" />
+
+          <property name="webinf.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF" />
+
+          <property name="env.TRAVIS_PULL_REQUEST" value="false" />
+
+          <property name="ant.project.name" value="Puffin Portals" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="env.rvm_project_rvmrc" value="0" />
+
+          <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="env.MY_RUBY_HOME" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="env.GAE_EMAIL" value="travis-ci@draysontechnologies.com" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="os.version" value="2.6.32-042stab090.5" />
+
+          <property name="env.rvm_max_time_flag" value="5" />
+
+          <property name="user.home" value="/home/travis" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="env.TRAVIS_TAG" value="" />
+
+          <property name="checkstyle.reports" value="/home/travis/build/draysontechnologies/Zen/reports/checkstyle.xml" />
+
+          <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-7-oracle" />
+
+          <property name="user.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+
+          <property name="env.MAIL" value="/var/mail/travis" />
+
+          <property name="env.PWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.rvm_autoupdate_flag" value="0" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="isLive" value="false" />
+
+          <property name="env.RAILS_ENV" value="test" />
+
+          <property name="java.vm.version" value="24.76-b04" />
+
+          <property name="java.class.path" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-1.0-sdk-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints-deps.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-gcs-client-0.4.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.10.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/asm-4.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/commons-logging-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jdo-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jpa-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-1.0.10.final.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-2.1.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-jpa-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_2.0_spec-1.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1-rev22-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1beta2-rev67-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jdo-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/gson-2.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/guava-18.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpclient-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpcore-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-2.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-asl-1.9.11.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo-api-3.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo2-api-2.3-eb.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/joda-time-2.6.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/json.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr107cache-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr305-1.3.9.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jta-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/junit-4.8.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/libservice.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/objectify-4.0rc2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/protobuf-java-2.4.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/transaction-api-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/xpp3-1.1.4c.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-javadoc.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-sources.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-analysis-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-commons-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-tree-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-util-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/dom4j-1.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/icu4j-2.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jaxen-1.1-beta-8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jdom-1.0.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-util-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/log4j-1.2.9.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/oro-2.0.8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/servlet-api-2.5-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/tagsoup-0.9.7.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xmlParserAPIs-2.6.2.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xom-1.0b3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/agent/appengine-agentruntime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-stubs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-local-runtime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/google_sql.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/testing/appengine-testing.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+
+          <property name="DSTAMP" value="20150226" />
+
+          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="env.TRAVIS_LANGUAGE" value="java" />
+
+          <property name="env.CONTINUOUS_INTEGRATION" value="true" />
+
+          <property name="build.log.dir" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes" />
+
+          <property name="env.rvm_without_gems" value="rubygems-bundler" />
+
+          <property name="env.LIBRATO_TOKEN" value="0593b93f7cdc1df17e43e45e56f59b1d7d3f6761621f37e48fd2409b3ec7d04e" />
+
+          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="TSTAMP" value="1532" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.runtime.version" value="1.7.0_76-b13" />
+
+          <property name="reports.dir" value="/home/travis/build/draysontechnologies/Zen/reports" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes" />
+
+          <property name="env.SSH_AUTH_SOCK" value="/tmp/ssh-YlBxgmmn2190/agent.2190" />
+
+          <property name="env.HAS_JOSH_K_SEAL_OF_APPROVAL" value="true" />
+
+          <property name="env.TRAVIS_BRANCH" value="develop" />
+
+          <property name="env.TRAVIS_JOB_ID" value="14178809" />
+
+          <property name="user.country" value="US" />
+
+          <property name="env.SHELL" value="/bin/bash" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="env.JRUBY_OPTS" value="--client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="env.TRAVIS" value="true" />
+
+          <property name="env.IRBRC" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551/.irbrc" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+      </properties>
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestConfigurationManager" name="testGetUserConfigValue" time="0.117" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestConfigurationManager" name="testCreateConfigValueForUser" time="0.06" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestConfigurationManager" name="testGetSystemConfigValue" time="0.074" />
+
+      <system-out />
+
+      <system-err />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="testing-worker-linux-40500720-1-8412-linux-6-14178809" id="2" name="TestJourneyManager" package="com.paconsulting.puffin.gae.test.business" tests="3" time="0.312" timestamp="2015-02-26T15:32:44">
+      <properties>
+          <property name="env.OLDPWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="env.rvm_bin_path" value="/home/travis/.rvm/bin" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre" />
+
+          <property name="env.TRAVIS_JOB_NUMBER" value="211.1" />
+
+          <property name="test.src.dir" value="/home/travis/build/draysontechnologies/Zen/test" />
+
+          <property name="config.dir" value="/home/travis/build/draysontechnologies/Zen/conf" />
+
+          <property name="env.SSH_TTY" value="/dev/pts/0" />
+
+          <property name="env.XDG_SESSION_COOKIE" value="c630043e25b11e96790dbbc800000537-1424964679.585115-1063748677" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed" />
+
+          <property name="env.LOGNAME" value="travis" />
+
+          <property name="env.rvm_with_default_gems" value="rake=~&gt;10.2.2 bundler=~&gt;1.6.0" />
+
+          <property name="src.dir" value="/home/travis/build/draysontechnologies/Zen/src" />
+
+          <property name="env._system_version" value="12.04" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="timestamp" value="2015-02-26_15-32-26" />
+
+          <property name="java.version" value="1.7.0_76" />
+
+          <property name="coverage.reports" value="/home/travis/build/draysontechnologies/Zen/reports/cobertura" />
+
+          <property name="env.NVM_PATH" value="/home/travis/.nvm/v0.10.36/lib/node" />
+
+          <property name="env.TRAVIS_SECURE_ENV_VARS" value="true" />
+
+          <property name="env._system_type" value="Linux" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SSH_CLIENT" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 22" />
+
+          <property name="env.GEM_HOME" value="/home/travis/.rvm/gems/ruby-1.9.3-p551" />
+
+          <property name="env.HAS_ANTARES_THREE_LITTLE_FRONZIES_BADGE" value="true" />
+
+          <property name="env.PS4" value="+" />
+
+          <property name="env.IS_LIVE" value="false" />
+
+          <property name="ant.project.invoked-targets" value="setup-for-dev" />
+
+          <property name="env.TRAVIS_REPO_SLUG" value="draysontechnologies/Zen" />
+
+          <property name="buildConf.dir" value="/home/travis/build/draysontechnologies/Zen/build-conf" />
+
+          <property name="instrumented.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes" />
+
+          <property name="env.RUBY_VERSION" value="ruby-1.9.3-p551" />
+
+          <property name="user.name" value="travis" />
+
+          <property name="env.LANG" value="en_US.UTF-8" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ant.log" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="BRANCH_SAFE" value="develop" />
+
+          <property name="env.DEBIAN_FRONTEND" value="noninteractive" />
+
+          <property name="env.SSH_CONNECTION" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 2607:f700:8001:134:5b8b:ebf8:a920:162b 22" />
+
+          <property name="lib.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib" />
+
+          <property name="env.LC_ALL" value="en_US.UTF-8" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="ant.project.default-target" value="compile" />
+
+          <property name="env.GIT_ASKPASS" value="echo" />
+
+          <property name="env.HOME" value="/home/travis" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/travis/build/draysontechnologies/Zen/junittestcases5785809080420495944.properties filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/travis/build/draysontechnologies/Zen/reports/junit/IGNORETHIS.xml crashfile=/home/travis/build/draysontechnologies/Zen/junitvmwatcher991711785886873338.properties propsfile=/home/travis/build/draysontechnologies/Zen/junit4776079284660931739.properties" />
+
+          <property name="env.MANPATH" value="/home/travis/.nvm/v0.10.36/share/man:/usr/local/clang-3.4/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man" />
+
+          <property name="env.COMPOSER_NO_INTERACTION" value="1" />
+
+          <property name="ant.file" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.NVM_NODEJS_ORG_MIRROR" value="https://nodejs.org/dist" />
+
+          <property name="jslint.reports" value="/home/travis/build/draysontechnologies/Zen/reports/jslint.xml" />
+
+          <property name="ant.file.type.Puffin Portals" value="file" />
+
+          <property name="env.TRAVIS_COMMIT_RANGE" value="34bfabb16687...c6b35e5c641e" />
+
+          <property name="env._system_name" value="Ubuntu" />
+
+          <property name="sdk.dir" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env._" value="/usr/bin/ant" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="TODAY" value="February 26 2015" />
+
+          <property name="user.language" value="en" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER" value="0-1-211" />
+
+          <property name="env.GOROOT" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64" />
+
+          <property name="line.separator" value=" " />
+
+          <property name="env.TRAVIS_BUILD_DIR" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="env.SSH_AGENT_PID" value="2191" />
+
+          <property name="ant.file.Puffin Portals" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.GAE_SDK" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env.MERB_ENV" value="test" />
+
+          <property name="env.NVM_IOJS_ORG_VERSION_LISTING" value="https://iojs.org/dist/index.tab" />
+
+          <property name="findbugs.reports" value="/home/travis/build/draysontechnologies/Zen/reports/findbugs.xml" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.log.filename" value="build_2015-02-26_15-32-26.log" />
+
+          <property name="env.GAE_PASSWORD" value="F@stracingB12" />
+
+          <property name="junit.reports" value="/home/travis/build/draysontechnologies/Zen/reports/junit" />
+
+          <property name="cobertura.dir" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="test.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes" />
+
+          <property name="env.rvm_path" value="/home/travis/.rvm" />
+
+          <property name="env.GEM_PATH" value="/home/travis/.rvm/gems/ruby-1.9.3-p551:/home/travis/.rvm/gems/ruby-1.9.3-p551@global" />
+
+          <property name="env.rvm_loaded_flag" value="1" />
+
+          <property name="cobertura.file" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="env.NVM_IOJS_ORG_MIRROR" value="https://iojs.org/dist" />
+
+          <property name="env.rvm_user_install_flag" value="1" />
+
+          <property name="env.rvm_stored_umask" value="0002" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.rvm_version" value="1.26.8 (1.26.8)" />
+
+          <property name="env.TERM" value="xterm" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="env.TRAVIS_BUILD_NUMBER" value="211" />
+
+          <property name="env.CI" value="true" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="env.rvm_prefix" value="/home/travis" />
+
+          <property name="env.PATH" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.36/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin" />
+
+          <property name="env.TRAVIS_OS_NAME" value="linux" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="basedir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="env.SHLVL" value="4" />
+
+          <property name="env.RACK_ENV" value="test" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER_FRIENDLY" value="0.1.211" />
+
+          <property name="ant.home" value="/usr/share/ant" />
+
+          <property name="env.NVM_DIR" value="/home/travis/.nvm" />
+
+          <property name="env.rvm_silence_path_mismatch_check_flag" value="1" />
+
+          <property name="env.TRAVIS_BUILD_ID" value="9786431" />
+
+          <property name="env.COBERTURADIR" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="env.NVM_BIN" value="/home/travis/.nvm/v0.10.36/bin" />
+
+          <property name="env.LIBRATO_USER" value="geoff.willinghamg@paconsulting.com" />
+
+          <property name="env.FINDBUGSDIR" value="/home/travis/build/draysontechnologies/Zen/findbugs-3.0.1-rc1" />
+
+          <property name="env.TRAVIS_COMMIT" value="c6b35e5c641ef6d05816262205a17bfc3faae34a" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env._system_arch" value="x86_64" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64" />
+
+          <property name="build.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="env.USER" value="travis" />
+
+          <property name="webinf.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF" />
+
+          <property name="env.TRAVIS_PULL_REQUEST" value="false" />
+
+          <property name="ant.project.name" value="Puffin Portals" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="env.rvm_project_rvmrc" value="0" />
+
+          <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="env.MY_RUBY_HOME" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="env.GAE_EMAIL" value="travis-ci@draysontechnologies.com" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="os.version" value="2.6.32-042stab090.5" />
+
+          <property name="env.rvm_max_time_flag" value="5" />
+
+          <property name="user.home" value="/home/travis" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="env.TRAVIS_TAG" value="" />
+
+          <property name="checkstyle.reports" value="/home/travis/build/draysontechnologies/Zen/reports/checkstyle.xml" />
+
+          <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-7-oracle" />
+
+          <property name="user.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+
+          <property name="env.MAIL" value="/var/mail/travis" />
+
+          <property name="env.PWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.rvm_autoupdate_flag" value="0" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="isLive" value="false" />
+
+          <property name="env.RAILS_ENV" value="test" />
+
+          <property name="java.vm.version" value="24.76-b04" />
+
+          <property name="java.class.path" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-1.0-sdk-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints-deps.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-gcs-client-0.4.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.10.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/asm-4.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/commons-logging-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jdo-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jpa-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-1.0.10.final.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-2.1.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-jpa-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_2.0_spec-1.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1-rev22-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1beta2-rev67-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jdo-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/gson-2.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/guava-18.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpclient-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpcore-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-2.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-asl-1.9.11.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo-api-3.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo2-api-2.3-eb.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/joda-time-2.6.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/json.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr107cache-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr305-1.3.9.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jta-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/junit-4.8.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/libservice.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/objectify-4.0rc2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/protobuf-java-2.4.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/transaction-api-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/xpp3-1.1.4c.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-javadoc.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-sources.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-analysis-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-commons-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-tree-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-util-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/dom4j-1.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/icu4j-2.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jaxen-1.1-beta-8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jdom-1.0.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-util-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/log4j-1.2.9.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/oro-2.0.8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/servlet-api-2.5-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/tagsoup-0.9.7.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xmlParserAPIs-2.6.2.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xom-1.0b3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/agent/appengine-agentruntime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-stubs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-local-runtime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/google_sql.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/testing/appengine-testing.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+
+          <property name="DSTAMP" value="20150226" />
+
+          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="env.TRAVIS_LANGUAGE" value="java" />
+
+          <property name="env.CONTINUOUS_INTEGRATION" value="true" />
+
+          <property name="build.log.dir" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes" />
+
+          <property name="env.rvm_without_gems" value="rubygems-bundler" />
+
+          <property name="env.LIBRATO_TOKEN" value="0593b93f7cdc1df17e43e45e56f59b1d7d3f6761621f37e48fd2409b3ec7d04e" />
+
+          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="TSTAMP" value="1532" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.runtime.version" value="1.7.0_76-b13" />
+
+          <property name="reports.dir" value="/home/travis/build/draysontechnologies/Zen/reports" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes" />
+
+          <property name="env.SSH_AUTH_SOCK" value="/tmp/ssh-YlBxgmmn2190/agent.2190" />
+
+          <property name="env.HAS_JOSH_K_SEAL_OF_APPROVAL" value="true" />
+
+          <property name="env.TRAVIS_BRANCH" value="develop" />
+
+          <property name="env.TRAVIS_JOB_ID" value="14178809" />
+
+          <property name="user.country" value="US" />
+
+          <property name="env.SHELL" value="/bin/bash" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="env.JRUBY_OPTS" value="--client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="env.TRAVIS" value="true" />
+
+          <property name="env.IRBRC" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551/.irbrc" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+      </properties>
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestJourneyManager" name="testCreateJourneySegment" time="0.104" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestJourneyManager" name="testCreateDuplicateJourneySegment" time="0.099" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestJourneyManager" name="testCreateJourneySegmentWithJsad" time="0.084" />
+
+      <system-out />
+
+      <system-err />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="testing-worker-linux-40500720-1-8412-linux-6-14178809" id="3" name="TestSecurityManager" package="com.paconsulting.puffin.gae.test.business" tests="10" time="0.753" timestamp="2015-02-26T15:32:44">
+      <properties>
+          <property name="env.OLDPWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="env.rvm_bin_path" value="/home/travis/.rvm/bin" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre" />
+
+          <property name="env.TRAVIS_JOB_NUMBER" value="211.1" />
+
+          <property name="test.src.dir" value="/home/travis/build/draysontechnologies/Zen/test" />
+
+          <property name="config.dir" value="/home/travis/build/draysontechnologies/Zen/conf" />
+
+          <property name="env.SSH_TTY" value="/dev/pts/0" />
+
+          <property name="env.XDG_SESSION_COOKIE" value="c630043e25b11e96790dbbc800000537-1424964679.585115-1063748677" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed" />
+
+          <property name="env.LOGNAME" value="travis" />
+
+          <property name="env.rvm_with_default_gems" value="rake=~&gt;10.2.2 bundler=~&gt;1.6.0" />
+
+          <property name="src.dir" value="/home/travis/build/draysontechnologies/Zen/src" />
+
+          <property name="env._system_version" value="12.04" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="timestamp" value="2015-02-26_15-32-26" />
+
+          <property name="java.version" value="1.7.0_76" />
+
+          <property name="coverage.reports" value="/home/travis/build/draysontechnologies/Zen/reports/cobertura" />
+
+          <property name="env.NVM_PATH" value="/home/travis/.nvm/v0.10.36/lib/node" />
+
+          <property name="env.TRAVIS_SECURE_ENV_VARS" value="true" />
+
+          <property name="env._system_type" value="Linux" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SSH_CLIENT" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 22" />
+
+          <property name="env.GEM_HOME" value="/home/travis/.rvm/gems/ruby-1.9.3-p551" />
+
+          <property name="env.HAS_ANTARES_THREE_LITTLE_FRONZIES_BADGE" value="true" />
+
+          <property name="env.PS4" value="+" />
+
+          <property name="env.IS_LIVE" value="false" />
+
+          <property name="ant.project.invoked-targets" value="setup-for-dev" />
+
+          <property name="env.TRAVIS_REPO_SLUG" value="draysontechnologies/Zen" />
+
+          <property name="buildConf.dir" value="/home/travis/build/draysontechnologies/Zen/build-conf" />
+
+          <property name="instrumented.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes" />
+
+          <property name="env.RUBY_VERSION" value="ruby-1.9.3-p551" />
+
+          <property name="user.name" value="travis" />
+
+          <property name="env.LANG" value="en_US.UTF-8" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ant.log" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="BRANCH_SAFE" value="develop" />
+
+          <property name="env.DEBIAN_FRONTEND" value="noninteractive" />
+
+          <property name="env.SSH_CONNECTION" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 2607:f700:8001:134:5b8b:ebf8:a920:162b 22" />
+
+          <property name="lib.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib" />
+
+          <property name="env.LC_ALL" value="en_US.UTF-8" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="ant.project.default-target" value="compile" />
+
+          <property name="env.GIT_ASKPASS" value="echo" />
+
+          <property name="env.HOME" value="/home/travis" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/travis/build/draysontechnologies/Zen/junittestcases5785809080420495944.properties filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/travis/build/draysontechnologies/Zen/reports/junit/IGNORETHIS.xml crashfile=/home/travis/build/draysontechnologies/Zen/junitvmwatcher991711785886873338.properties propsfile=/home/travis/build/draysontechnologies/Zen/junit4776079284660931739.properties" />
+
+          <property name="env.MANPATH" value="/home/travis/.nvm/v0.10.36/share/man:/usr/local/clang-3.4/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man" />
+
+          <property name="env.COMPOSER_NO_INTERACTION" value="1" />
+
+          <property name="ant.file" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.NVM_NODEJS_ORG_MIRROR" value="https://nodejs.org/dist" />
+
+          <property name="jslint.reports" value="/home/travis/build/draysontechnologies/Zen/reports/jslint.xml" />
+
+          <property name="ant.file.type.Puffin Portals" value="file" />
+
+          <property name="env.TRAVIS_COMMIT_RANGE" value="34bfabb16687...c6b35e5c641e" />
+
+          <property name="env._system_name" value="Ubuntu" />
+
+          <property name="sdk.dir" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env._" value="/usr/bin/ant" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="TODAY" value="February 26 2015" />
+
+          <property name="user.language" value="en" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER" value="0-1-211" />
+
+          <property name="env.GOROOT" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64" />
+
+          <property name="line.separator" value=" " />
+
+          <property name="env.TRAVIS_BUILD_DIR" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="env.SSH_AGENT_PID" value="2191" />
+
+          <property name="ant.file.Puffin Portals" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.GAE_SDK" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env.MERB_ENV" value="test" />
+
+          <property name="env.NVM_IOJS_ORG_VERSION_LISTING" value="https://iojs.org/dist/index.tab" />
+
+          <property name="findbugs.reports" value="/home/travis/build/draysontechnologies/Zen/reports/findbugs.xml" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.log.filename" value="build_2015-02-26_15-32-26.log" />
+
+          <property name="env.GAE_PASSWORD" value="F@stracingB12" />
+
+          <property name="junit.reports" value="/home/travis/build/draysontechnologies/Zen/reports/junit" />
+
+          <property name="cobertura.dir" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="test.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes" />
+
+          <property name="env.rvm_path" value="/home/travis/.rvm" />
+
+          <property name="env.GEM_PATH" value="/home/travis/.rvm/gems/ruby-1.9.3-p551:/home/travis/.rvm/gems/ruby-1.9.3-p551@global" />
+
+          <property name="env.rvm_loaded_flag" value="1" />
+
+          <property name="cobertura.file" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="env.NVM_IOJS_ORG_MIRROR" value="https://iojs.org/dist" />
+
+          <property name="env.rvm_user_install_flag" value="1" />
+
+          <property name="env.rvm_stored_umask" value="0002" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.rvm_version" value="1.26.8 (1.26.8)" />
+
+          <property name="env.TERM" value="xterm" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="env.TRAVIS_BUILD_NUMBER" value="211" />
+
+          <property name="env.CI" value="true" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="env.rvm_prefix" value="/home/travis" />
+
+          <property name="env.PATH" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.36/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin" />
+
+          <property name="env.TRAVIS_OS_NAME" value="linux" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="basedir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="env.SHLVL" value="4" />
+
+          <property name="env.RACK_ENV" value="test" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER_FRIENDLY" value="0.1.211" />
+
+          <property name="ant.home" value="/usr/share/ant" />
+
+          <property name="env.NVM_DIR" value="/home/travis/.nvm" />
+
+          <property name="env.rvm_silence_path_mismatch_check_flag" value="1" />
+
+          <property name="env.TRAVIS_BUILD_ID" value="9786431" />
+
+          <property name="env.COBERTURADIR" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="env.NVM_BIN" value="/home/travis/.nvm/v0.10.36/bin" />
+
+          <property name="env.LIBRATO_USER" value="geoff.willinghamg@paconsulting.com" />
+
+          <property name="env.FINDBUGSDIR" value="/home/travis/build/draysontechnologies/Zen/findbugs-3.0.1-rc1" />
+
+          <property name="env.TRAVIS_COMMIT" value="c6b35e5c641ef6d05816262205a17bfc3faae34a" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env._system_arch" value="x86_64" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64" />
+
+          <property name="build.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="env.USER" value="travis" />
+
+          <property name="webinf.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF" />
+
+          <property name="env.TRAVIS_PULL_REQUEST" value="false" />
+
+          <property name="ant.project.name" value="Puffin Portals" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="env.rvm_project_rvmrc" value="0" />
+
+          <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="env.MY_RUBY_HOME" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="env.GAE_EMAIL" value="travis-ci@draysontechnologies.com" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="os.version" value="2.6.32-042stab090.5" />
+
+          <property name="env.rvm_max_time_flag" value="5" />
+
+          <property name="user.home" value="/home/travis" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="env.TRAVIS_TAG" value="" />
+
+          <property name="checkstyle.reports" value="/home/travis/build/draysontechnologies/Zen/reports/checkstyle.xml" />
+
+          <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-7-oracle" />
+
+          <property name="user.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+
+          <property name="env.MAIL" value="/var/mail/travis" />
+
+          <property name="env.PWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.rvm_autoupdate_flag" value="0" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="isLive" value="false" />
+
+          <property name="env.RAILS_ENV" value="test" />
+
+          <property name="java.vm.version" value="24.76-b04" />
+
+          <property name="java.class.path" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-1.0-sdk-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints-deps.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-gcs-client-0.4.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.10.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/asm-4.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/commons-logging-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jdo-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jpa-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-1.0.10.final.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-2.1.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-jpa-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_2.0_spec-1.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1-rev22-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1beta2-rev67-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jdo-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/gson-2.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/guava-18.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpclient-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpcore-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-2.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-asl-1.9.11.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo-api-3.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo2-api-2.3-eb.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/joda-time-2.6.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/json.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr107cache-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr305-1.3.9.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jta-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/junit-4.8.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/libservice.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/objectify-4.0rc2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/protobuf-java-2.4.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/transaction-api-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/xpp3-1.1.4c.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-javadoc.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-sources.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-analysis-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-commons-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-tree-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-util-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/dom4j-1.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/icu4j-2.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jaxen-1.1-beta-8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jdom-1.0.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-util-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/log4j-1.2.9.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/oro-2.0.8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/servlet-api-2.5-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/tagsoup-0.9.7.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xmlParserAPIs-2.6.2.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xom-1.0b3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/agent/appengine-agentruntime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-stubs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-local-runtime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/google_sql.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/testing/appengine-testing.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+
+          <property name="DSTAMP" value="20150226" />
+
+          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="env.TRAVIS_LANGUAGE" value="java" />
+
+          <property name="env.CONTINUOUS_INTEGRATION" value="true" />
+
+          <property name="build.log.dir" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes" />
+
+          <property name="env.rvm_without_gems" value="rubygems-bundler" />
+
+          <property name="env.LIBRATO_TOKEN" value="0593b93f7cdc1df17e43e45e56f59b1d7d3f6761621f37e48fd2409b3ec7d04e" />
+
+          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="TSTAMP" value="1532" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.runtime.version" value="1.7.0_76-b13" />
+
+          <property name="reports.dir" value="/home/travis/build/draysontechnologies/Zen/reports" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes" />
+
+          <property name="env.SSH_AUTH_SOCK" value="/tmp/ssh-YlBxgmmn2190/agent.2190" />
+
+          <property name="env.HAS_JOSH_K_SEAL_OF_APPROVAL" value="true" />
+
+          <property name="env.TRAVIS_BRANCH" value="develop" />
+
+          <property name="env.TRAVIS_JOB_ID" value="14178809" />
+
+          <property name="user.country" value="US" />
+
+          <property name="env.SHELL" value="/bin/bash" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="env.JRUBY_OPTS" value="--client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="env.TRAVIS" value="true" />
+
+          <property name="env.IRBRC" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551/.irbrc" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+      </properties>
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightNotActiveWhenToggledOffForNonAdmin" time="0.063" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightNotActiveWhenToggledOffForAdmin" time="0.063" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightActiveWhenToggledOnForNonAdminWithNoJustificationOversight" time="0.076" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightActiveWhenToggledOnForNonAdminWithJustificationOversight" time="0.074" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightActiveWhenToggledOnForAdminWithJustificationOversight" time="0.074" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightActiveWhenToggledOnForNonAdminWithNoApprovalOversight" time="0.067" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightActiveWhenToggledOnForNonAdminWithApprovalPendingOversight" time="0.074" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightActiveWhenToggledOnForNonAdminWithApprovalApprovedOversight" time="0.07" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightActiveWhenToggledOnForAdminWithApprovalApprovedOversight" time="0.066" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.business.TestSecurityManager" name="testOversightApproval" time="0.096" />
+
+      <system-out />
+
+      <system-err />
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="testing-worker-linux-40500720-1-8412-linux-6-14178809" id="4" name="TestUpgradeSprint2" package="com.paconsulting.puffin.gae.test.db" tests="3" time="0.213" timestamp="2015-02-26T15:32:45">
+      <properties>
+          <property name="env.OLDPWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="env.rvm_bin_path" value="/home/travis/.rvm/bin" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre" />
+
+          <property name="env.TRAVIS_JOB_NUMBER" value="211.1" />
+
+          <property name="test.src.dir" value="/home/travis/build/draysontechnologies/Zen/test" />
+
+          <property name="config.dir" value="/home/travis/build/draysontechnologies/Zen/conf" />
+
+          <property name="env.SSH_TTY" value="/dev/pts/0" />
+
+          <property name="env.XDG_SESSION_COOKIE" value="c630043e25b11e96790dbbc800000537-1424964679.585115-1063748677" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed" />
+
+          <property name="env.LOGNAME" value="travis" />
+
+          <property name="env.rvm_with_default_gems" value="rake=~&gt;10.2.2 bundler=~&gt;1.6.0" />
+
+          <property name="src.dir" value="/home/travis/build/draysontechnologies/Zen/src" />
+
+          <property name="env._system_version" value="12.04" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="timestamp" value="2015-02-26_15-32-26" />
+
+          <property name="java.version" value="1.7.0_76" />
+
+          <property name="coverage.reports" value="/home/travis/build/draysontechnologies/Zen/reports/cobertura" />
+
+          <property name="env.NVM_PATH" value="/home/travis/.nvm/v0.10.36/lib/node" />
+
+          <property name="env.TRAVIS_SECURE_ENV_VARS" value="true" />
+
+          <property name="env._system_type" value="Linux" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="env.SSH_CLIENT" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 22" />
+
+          <property name="env.GEM_HOME" value="/home/travis/.rvm/gems/ruby-1.9.3-p551" />
+
+          <property name="env.HAS_ANTARES_THREE_LITTLE_FRONZIES_BADGE" value="true" />
+
+          <property name="env.PS4" value="+" />
+
+          <property name="env.IS_LIVE" value="false" />
+
+          <property name="ant.project.invoked-targets" value="setup-for-dev" />
+
+          <property name="env.TRAVIS_REPO_SLUG" value="draysontechnologies/Zen" />
+
+          <property name="buildConf.dir" value="/home/travis/build/draysontechnologies/Zen/build-conf" />
+
+          <property name="instrumented.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes" />
+
+          <property name="env.RUBY_VERSION" value="ruby-1.9.3-p551" />
+
+          <property name="user.name" value="travis" />
+
+          <property name="env.LANG" value="en_US.UTF-8" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="ant.log" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="BRANCH_SAFE" value="develop" />
+
+          <property name="env.DEBIAN_FRONTEND" value="noninteractive" />
+
+          <property name="env.SSH_CONNECTION" value="2607:f700:8001:134:fb55:e865:19a3:d8c3 58253 2607:f700:8001:134:5b8b:ebf8:a920:162b 22" />
+
+          <property name="lib.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib" />
+
+          <property name="env.LC_ALL" value="en_US.UTF-8" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="user.timezone" value="" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="ant.project.default-target" value="compile" />
+
+          <property name="env.GIT_ASKPASS" value="echo" />
+
+          <property name="env.HOME" value="/home/travis" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/travis/build/draysontechnologies/Zen/junittestcases5785809080420495944.properties filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/travis/build/draysontechnologies/Zen/reports/junit/IGNORETHIS.xml crashfile=/home/travis/build/draysontechnologies/Zen/junitvmwatcher991711785886873338.properties propsfile=/home/travis/build/draysontechnologies/Zen/junit4776079284660931739.properties" />
+
+          <property name="env.MANPATH" value="/home/travis/.nvm/v0.10.36/share/man:/usr/local/clang-3.4/share/man:/usr/local/man:/usr/local/share/man:/usr/share/man" />
+
+          <property name="env.COMPOSER_NO_INTERACTION" value="1" />
+
+          <property name="ant.file" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.NVM_NODEJS_ORG_MIRROR" value="https://nodejs.org/dist" />
+
+          <property name="jslint.reports" value="/home/travis/build/draysontechnologies/Zen/reports/jslint.xml" />
+
+          <property name="ant.file.type.Puffin Portals" value="file" />
+
+          <property name="env.TRAVIS_COMMIT_RANGE" value="34bfabb16687...c6b35e5c641e" />
+
+          <property name="env._system_name" value="Ubuntu" />
+
+          <property name="sdk.dir" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env._" value="/usr/bin/ant" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="TODAY" value="February 26 2015" />
+
+          <property name="user.language" value="en" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER" value="0-1-211" />
+
+          <property name="env.GOROOT" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64" />
+
+          <property name="line.separator" value=" " />
+
+          <property name="env.TRAVIS_BUILD_DIR" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="env.SSH_AGENT_PID" value="2191" />
+
+          <property name="ant.file.Puffin Portals" value="/home/travis/build/draysontechnologies/Zen/travis_build.xml" />
+
+          <property name="env.GAE_SDK" value="/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17" />
+
+          <property name="env.MERB_ENV" value="test" />
+
+          <property name="env.NVM_IOJS_ORG_VERSION_LISTING" value="https://iojs.org/dist/index.tab" />
+
+          <property name="findbugs.reports" value="/home/travis/build/draysontechnologies/Zen/reports/findbugs.xml" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="build.log.filename" value="build_2015-02-26_15-32-26.log" />
+
+          <property name="env.GAE_PASSWORD" value="F@stracingB12" />
+
+          <property name="junit.reports" value="/home/travis/build/draysontechnologies/Zen/reports/junit" />
+
+          <property name="cobertura.dir" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="test.classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes" />
+
+          <property name="env.rvm_path" value="/home/travis/.rvm" />
+
+          <property name="env.GEM_PATH" value="/home/travis/.rvm/gems/ruby-1.9.3-p551:/home/travis/.rvm/gems/ruby-1.9.3-p551@global" />
+
+          <property name="env.rvm_loaded_flag" value="1" />
+
+          <property name="cobertura.file" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="env.NVM_IOJS_ORG_MIRROR" value="https://iojs.org/dist" />
+
+          <property name="env.rvm_user_install_flag" value="1" />
+
+          <property name="env.rvm_stored_umask" value="0002" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 3 2011" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="env.rvm_version" value="1.26.8 (1.26.8)" />
+
+          <property name="env.TERM" value="xterm" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="env.TRAVIS_BUILD_NUMBER" value="211" />
+
+          <property name="env.CI" value="true" />
+
+          <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="env.rvm_prefix" value="/home/travis" />
+
+          <property name="env.PATH" value="/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.36/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/usr/local/phantomjs/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/gradle/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin:/home/travis/.rvm/bin" />
+
+          <property name="env.TRAVIS_OS_NAME" value="linux" />
+
+          <property name="ant.java.version" value="1.7" />
+
+          <property name="basedir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="java.class.version" value="51.0" />
+
+          <property name="env.SHLVL" value="4" />
+
+          <property name="env.RACK_ENV" value="test" />
+
+          <property name="env.PUFFIN_VERSION_NUMBER_FRIENDLY" value="0.1.211" />
+
+          <property name="ant.home" value="/usr/share/ant" />
+
+          <property name="env.NVM_DIR" value="/home/travis/.nvm" />
+
+          <property name="env.rvm_silence_path_mismatch_check_flag" value="1" />
+
+          <property name="env.TRAVIS_BUILD_ID" value="9786431" />
+
+          <property name="env.COBERTURADIR" value="/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3" />
+
+          <property name="env.NVM_BIN" value="/home/travis/.nvm/v0.10.36/bin" />
+
+          <property name="env.LIBRATO_USER" value="geoff.willinghamg@paconsulting.com" />
+
+          <property name="env.FINDBUGSDIR" value="/home/travis/build/draysontechnologies/Zen/findbugs-3.0.1-rc1" />
+
+          <property name="env.TRAVIS_COMMIT" value="c6b35e5c641ef6d05816262205a17bfc3faae34a" />
+
+          <property name="net.sourceforge.cobertura.datafile" value="/home/travis/build/draysontechnologies/Zen/build-conf/cobertura.ser" />
+
+          <property name="env._system_arch" value="x86_64" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64" />
+
+          <property name="build.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="env.USER" value="travis" />
+
+          <property name="webinf.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF" />
+
+          <property name="env.TRAVIS_PULL_REQUEST" value="false" />
+
+          <property name="ant.project.name" value="Puffin Portals" />
+
+          <property name="java.vm.specification.version" value="1.7" />
+
+          <property name="env.rvm_project_rvmrc" value="0" />
+
+          <property name="env.NLSPATH" value="/usr/dt/lib/nls/msg/%L/%N.cat" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="env.MY_RUBY_HOME" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="env.GAE_EMAIL" value="travis-ci@draysontechnologies.com" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="os.version" value="2.6.32-042stab090.5" />
+
+          <property name="env.rvm_max_time_flag" value="5" />
+
+          <property name="user.home" value="/home/travis" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="env.TRAVIS_TAG" value="" />
+
+          <property name="checkstyle.reports" value="/home/travis/build/draysontechnologies/Zen/reports/checkstyle.xml" />
+
+          <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-7-oracle" />
+
+          <property name="user.dir" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.XFILESEARCHPATH" value="/usr/dt/app-defaults/%L/Dt" />
+
+          <property name="env.MAIL" value="/var/mail/travis" />
+
+          <property name="env.PWD" value="/home/travis/build/draysontechnologies/Zen" />
+
+          <property name="env.rvm_autoupdate_flag" value="0" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="isLive" value="false" />
+
+          <property name="env.RAILS_ENV" value="test" />
+
+          <property name="java.vm.version" value="24.76-b04" />
+
+          <property name="java.class.path" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-1.0-sdk-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints-deps.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-endpoints.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-gcs-client-0.4.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.10.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/appengine-jsr107cache-1.9.17.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/asm-4.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/commons-logging-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jdo-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-api-jpa-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-1.0.10.final.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-appengine-2.1.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-core-3.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/datanucleus-jpa-1.1.5.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_2.0_spec-1.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jpa_3.0_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1-rev22-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-api-services-storage-v1beta2-rev67-1.19.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jackson2-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-jdo-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-http-client-protobuf-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-appengine-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/google-oauth-client-servlet-1.18.0-rc.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/gson-2.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/guava-18.0.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpclient-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/httpcore-4.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-2.1.3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jackson-core-asl-1.9.11.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo-api-3.0.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jdo2-api-2.3-eb.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/joda-time-2.6.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/json.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr107cache-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jsr305-1.3.9.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/jta-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/junit-4.8.2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/libservice.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/objectify-4.0rc2.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/protobuf-java-2.4.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/transaction-api-1.1.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/lib/xpp3-1.1.4c.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-javadoc.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3-sources.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/cobertura-2.0.3.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-analysis-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-commons-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-tree-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/asm-util-4.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/dom4j-1.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/icu4j-2.6.1.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jaxen-1.1-beta-8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jdom-1.0.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/jetty-util-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/log4j-1.2.9.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/oro-2.0.8.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/servlet-api-2.5-6.1.14.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/tagsoup-0.9.7.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xmlParserAPIs-2.6.2.jar:/home/travis/build/draysontechnologies/Zen/cobertura-2.0.3/lib/xom-1.0b3.jar:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/instrumented-classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes:/home/travis/build/draysontechnologies/Zen/war/WEB-INF/test-classes:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/agent/appengine-agentruntime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-labs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api-stubs.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-api.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/appengine-local-runtime.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/impl/google_sql.jar:/home/travis/build/draysontechnologies/Zen/appengine-java-sdk-1.9.17/lib/testing/appengine-testing.jar:/usr/share/java/ant-launcher-1.8.2.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+
+          <property name="DSTAMP" value="20150226" />
+
+          <property name="ant.library.dir" value="/usr/share/ant/lib" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="env.TRAVIS_LANGUAGE" value="java" />
+
+          <property name="env.CONTINUOUS_INTEGRATION" value="true" />
+
+          <property name="build.log.dir" value="/home/travis/build/draysontechnologies/Zen/reports/ant" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="classes.dir" value="/home/travis/build/draysontechnologies/Zen/war/WEB-INF/classes" />
+
+          <property name="env.rvm_without_gems" value="rubygems-bundler" />
+
+          <property name="env.LIBRATO_TOKEN" value="0593b93f7cdc1df17e43e45e56f59b1d7d3f6761621f37e48fd2409b3ec7d04e" />
+
+          <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="TSTAMP" value="1532" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.runtime.version" value="1.7.0_76-b13" />
+
+          <property name="reports.dir" value="/home/travis/build/draysontechnologies/Zen/reports" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes" />
+
+          <property name="env.SSH_AUTH_SOCK" value="/tmp/ssh-YlBxgmmn2190/agent.2190" />
+
+          <property name="env.HAS_JOSH_K_SEAL_OF_APPROVAL" value="true" />
+
+          <property name="env.TRAVIS_BRANCH" value="develop" />
+
+          <property name="env.TRAVIS_JOB_ID" value="14178809" />
+
+          <property name="user.country" value="US" />
+
+          <property name="env.SHELL" value="/bin/bash" />
+
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="env.JRUBY_OPTS" value="--client -J-XX:+TieredCompilation -J-XX:TieredStopAtLevel=1 -Xcext.enabled=false -J-Xss2m -Xcompile.invokedynamic=false" />
+
+          <property name="java.specification.version" value="1.7" />
+
+          <property name="env.TRAVIS" value="true" />
+
+          <property name="env.IRBRC" value="/home/travis/.rvm/rubies/ruby-1.9.3-p551/.irbrc" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+      </properties>
+
+      <testcase classname="com.paconsulting.puffin.gae.test.db.TestUpgradeSprint2" name="testSprint2UpgradeJourneySegment" time="0.065" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.db.TestUpgradeSprint2" name="testSprint2UpgradeJourneySegmentTwice" time="0.067" />
+
+      <testcase classname="com.paconsulting.puffin.gae.test.db.TestUpgradeSprint2" name="testSprint2UpgradeJourneySegmentWithDelete" time="0.06" />
+
+      <system-out><![CDATA[<Text: [[-0.02,52.1],[-0.12,52.2&#x5d;&#x5d;&gt;
+<Text: [[-0.02,52.1],[-0.12,52.2&#x5d;&#x5d;&gt;
+<Text: [[-0.02,52.1],[-0.12,52.2&#x5d;&#x5d;&gt;
+<Text: [[-0.02,52.1],[-0.12,52.2&#x5d;&#x5d;&gt;
+<Text: [[-0.02,52.1],[-0.12,52.2&#x5d;&#x5d;&gt;
+<Text: [[-0.02,52.1],[-0.12,52.2&#x5d;&#x5d;&gt;
+]]></system-out>
+
+      <system-err />
+
+  </testsuite>
+</testsuites>

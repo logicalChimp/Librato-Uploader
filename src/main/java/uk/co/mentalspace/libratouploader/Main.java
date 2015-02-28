@@ -32,13 +32,13 @@ public class Main {
       
       Processor processor = new Processor(cmd.getOptionValue("mp"), cmd.getOptionValue("lk"), cmd.getOptionValue("lsk"));
       for (String file : cmd.getOptionValues("files")) {
-        int response = processor.process(file);
+        int response = processor.process(file).getCode();
         if (response != 0) {
           System.exit(response);
         }
       }
       
-      int response = processor.upload();
+      int response = processor.upload().getCode();
       if (response != 0) {
         System.exit(response);
       }
@@ -50,6 +50,8 @@ public class Main {
   }
   
   public static void displayErrorCodes() {
-    System.out.println("  0: No error (normal termination)");
+    for (Processor.Error error : Processor.Error.values()) {
+      System.out.println(error.formatForOutput());
+    }
   }
 }
