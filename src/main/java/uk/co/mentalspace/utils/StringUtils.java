@@ -11,4 +11,8 @@ public final class StringUtils {
     }
     return false;
   }
+  
+  public static final Integer getAsInteger(String str) {
+    return Integer.parseInt(str);
+  }
 }

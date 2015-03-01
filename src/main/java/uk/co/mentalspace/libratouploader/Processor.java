@@ -1,7 +1,19 @@
 package uk.co.mentalspace.libratouploader;
 
 import java.io.File;
+import java.io.PrintWriter;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.io.OutputStreamWriter;
 import uk.co.mentalspace.utils.StringUtils;
+import javax.xml.parsers.DocumentBuilder; 
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import org.xml.sax.SAXException; 
+import org.w3c.dom.Document;
+import java.util.List;
+import java.util.ArrayList;
+import uk.co.mentalspace.libratouploader.metrics.*;
 
 public class Processor {
   
@@ -41,6 +53,8 @@ public class Processor {
   private String libratoKey;
   private String libratoSecretKey;
   
+  private List<Metric> metrics = new ArrayList<Metric>();
+  
   public Processor(String prefix, String key, String secretKey) {
     metricPrefix = prefix;
     if (null == metricPrefix) {
@@ -48,6 +62,11 @@ public class Processor {
     }
     libratoKey = key;
     libratoSecretKey = secretKey;
+    
+    metrics.add(new Checkstyle());
+    metrics.add(new Cobertura());
+    metrics.add(new FindBugs());
+    metrics.add(new Junit());
   }
   
   public Error process(String filename) {
@@ -56,6 +75,26 @@ public class Processor {
       System.err.println("Filename [" + filename + "] does not exist.");
       return Error.INVALID_FILE;
     }
+
+    try {
+      DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+      DocumentBuilder db = dbf.newDocumentBuilder(); 
+	   OutputStreamWriter errorWriter = new OutputStreamWriter(System.err, "UTF-8");
+      db.setErrorHandler(new ErrorHandler (new PrintWriter(errorWriter, true)));
+      Document doc = db.parse(file);
+      
+      for (Metric metric : metrics) {
+        if (metric.canUse(doc)) {
+          metric.process(doc);
+        }
+      }
+      
+    } catch (ParserConfigurationException pce) {
+    } catch (UnsupportedEncodingException uee) {
+    } catch (SAXException se) {
+    } catch (IOException ioe) {
+    }
+    
     
     return Error.NO_ERROR;
   }
