@@ -6,8 +6,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
 import org.w3c.dom.NamedNodeMap;
-import org.json.simple.JSONObject;
-import org.json.simple.JSONArray;
+import com.librato.metrics.LibratoBatch;
+import com.librato.metrics.SingleValueGaugeMeasurement;
 
 public class FindBugs implements Metric {
 
@@ -27,9 +27,8 @@ public class FindBugs implements Metric {
   }
   
   @SuppressWarnings("unchecked")
-  public JSONArray process(Document doc) {
+  public void process(LibratoBatch batch, Document doc) {
     NodeList nodes = doc.getElementsByTagName("FindBugsSummary");
-    JSONArray metrics = new JSONArray();
     for (int i=0; i<nodes.getLength(); i++) {
       Node node = nodes.item(i);
       int p1value = 0;
@@ -41,41 +40,35 @@ public class FindBugs implements Metric {
           for (int j=0; j<atts.getLength(); j++) {
             Node att = atts.item(j);
             if ("priority_1".equals(att.getNodeName())) {
-              JSONObject p1 = new JSONObject();
-              p1.put("name", metricPrefix + "findbugs-p1");
               p1value = StringUtils.getAsInteger(att.getNodeValue());
-              p1.put("value", p1value);
-              p1.put("display_name", "FindBugs Priority 1");
-              metrics.add(p1);
+              batch.addMeasurement(SingleValueGaugeMeasurement
+                                   .builder(metricPrefix + "findbugs-p1", p1value)
+                                   .setMetricAttribute("display_name", "FindBugs Priority 1")
+                                   .build());
             }
             if ("priority_2".equals(att.getNodeName())) {
-              JSONObject p2 = new JSONObject();
-              p2.put("name", metricPrefix + "findbugs-p2");
               p2value = StringUtils.getAsInteger(att.getNodeValue());
-              p2.put("value", p2value);
-              p2.put("display_name", "FindBugs Priority 2");
-              metrics.add(p2);
+              batch.addMeasurement(SingleValueGaugeMeasurement
+                                   .builder(metricPrefix + "findbugs-p2", p2value)
+                                   .setMetricAttribute("display_name", "FindBugs Priority 2")
+                                   .build());
             }
-            if ("total".equals(att.getNodeName())) {
-              JSONObject total = new JSONObject();
-              total.put("name", metricPrefix + "findbugs-total");
+            if ("total_bugs".equals(att.getNodeName())) {
               totalvalue = StringUtils.getAsInteger(att.getNodeValue());
-              total.put("value", totalvalue);
-              total.put("display_name", "FindBugs Total");
-              metrics.add(total);
+              batch.addMeasurement(SingleValueGaugeMeasurement
+                                   .builder(metricPrefix + "findbugs-total", totalvalue)
+                                   .setMetricAttribute("display_name", "FindBugs Total")
+                                   .build());
             }
           }
         default:
         //do nothing
       }
-      JSONObject other = new JSONObject();
-      other.put("name", metricPrefix + "findbugs-other");
-      other.put("value", (totalvalue - (p1value + p2value)));
-      other.put("display_name", "FindBugs (Other)");
-      metrics.add(other);      
+      batch.addMeasurement(SingleValueGaugeMeasurement
+                           .builder(metricPrefix + "findbugs-other", (totalvalue - (p1value + p2value)))
+                           .setMetricAttribute("display_name", "FindBugs (Other)")
+                           .build());
     }
-    
-    return metrics;
   }
 
   public Type getType() {

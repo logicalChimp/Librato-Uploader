@@ -13,7 +13,14 @@ import org.xml.sax.SAXException;
 import org.w3c.dom.Document;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 import uk.co.mentalspace.libratouploader.metrics.*;
+import com.librato.metrics.HttpPoster;
+import com.librato.metrics.NingHttpPoster;
+import com.librato.metrics.Sanitizer;
+import com.librato.metrics.LibratoBatch;
+import com.librato.metrics.BatchResult;
+import com.librato.metrics.PostResult;
 
 public class Processor {
   
@@ -26,6 +33,7 @@ public class Processor {
     private String description;
     private Error(int i, String desc) {
       code = i;
+      description = desc;
     }
     public int getCode() {
       return code;
@@ -49,24 +57,33 @@ public class Processor {
   
   private static final String DEFAULT_PREFIX = "TEST-";
   
-  private String metricPrefix;
   private String libratoKey;
   private String libratoSecretKey;
-  
+  private String source;
+  private LibratoBatch batch = null;
   private List<Metric> metrics = new ArrayList<Metric>();
   
-  public Processor(String prefix, String key, String secretKey) {
-    metricPrefix = prefix;
-    if (null == metricPrefix) {
-      metricPrefix = DEFAULT_PREFIX;
+  public Processor(String prefix, String sourceName,  String key, String secretKey) {
+    if (null == prefix) {
+      prefix = DEFAULT_PREFIX;
     }
     libratoKey = key;
     libratoSecretKey = secretKey;
+    source = sourceName;
     
-    metrics.add(new Checkstyle());
-    metrics.add(new Cobertura());
-    metrics.add(new FindBugs());
-    metrics.add(new Junit());
+    metrics.add((new Checkstyle()).prefix(prefix));
+    metrics.add((new Cobertura()).prefix(prefix));
+    metrics.add((new FindBugs()).prefix(prefix));
+    metrics.add((new Junit()).prefix(prefix));
+    
+    String apiUrl = "https://metrics-api.librato.com/v1/metrics";
+    HttpPoster poster = NingHttpPoster.newPoster(libratoKey, libratoSecretKey, apiUrl);
+
+    int batchSize = 300;
+    long timeout = 10L;
+    TimeUnit timeoutUnit = TimeUnit.SECONDS;
+    String agent = "librato-uploader";
+    batch = new LibratoBatch(batchSize, Sanitizer.LAST_PASS, timeout, timeoutUnit, agent, poster);
   }
   
   public Error process(String filename) {
@@ -85,14 +102,18 @@ public class Processor {
       
       for (Metric metric : metrics) {
         if (metric.canUse(doc)) {
-          metric.process(doc);
+          metric.process(batch, doc);
         }
       }
       
     } catch (ParserConfigurationException pce) {
+      System.err.println(pce);
     } catch (UnsupportedEncodingException uee) {
+      System.err.println(uee);
     } catch (SAXException se) {
+      System.err.println(se);
     } catch (IOException ioe) {
+      System.err.println(ioe);
     }
     
     
@@ -106,6 +127,14 @@ public class Processor {
     if (StringUtils.isEmpty(libratoSecretKey)) {
       return Error.MISSING_LIBRATO_SECRET;
     }
+
+    long epoch = System.currentTimeMillis() / 1000;
+    BatchResult result = batch.post(source, epoch);
+    if (!result.success()) {
+      for (PostResult post : result.getFailedPosts()) {
+        System.err.println("Could not POST to Librato: " + post.toString());
+      }
+    }    
     return Error.NO_ERROR;
   }
   

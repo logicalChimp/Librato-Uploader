@@ -11,27 +11,30 @@ public class Main {
   
   public static void main (String[] args) {
     Options options = new Options();
-	 options.addOption( "?", "help", false, "display this message" );
-    options.addOption( "??", "errors", false, "Display the list of error codes");
+	 options.addOption( "h", "help", false, "display this message" );
+    options.addOption( "errors", false, "Display the list of error codes");
     options.addOption( "mp", "metric-prefix", true, "the prefix to add to every metric name (e.g. environment name)");
     options.addOption( "lk", "librato-key", true, "the librato key to use to authenticate with Librato");
     options.addOption( "lsk", "librato-secret-key", true, "the librato secret key to validate your use of the librato key");
-    options.addOption(OptionBuilder.withLongOpt("files").withArgName("JUnitReport> <CoberturaReport> <FindBugsReport> <CheckstyleReport").withValueSeparator(' ').hasArgs(2).withDescription("The report files to parse (in any order) - just omit files as required.").create("t"));    
+    options.addOption( "src", "librato-source", true, "the 'Source' of the metric data (e.g. machine name)");
+    options.addOption(OptionBuilder.withLongOpt("files").withArgName("JUnitReport> <CoberturaReport> <FindBugsReport> <CheckstyleReport").withValueSeparator(' ').hasArgs(4).withDescription("The report files to parse (in any order) - just omit files as required.").create("t"));    
 
     CommandLineParser parser = new BasicParser();
     try {
       CommandLine cmd = parser.parse( options, args);
-      if (cmd.hasOption("help") || !cmd.hasOption("lk") || !cmd.hasOption("lsk") || !cmd.hasOption("files") || cmd.getOptionValues("files").length < 1) {
-        System.out.println(options.toString());
-        return;
-      }
       if (cmd.hasOption("errors")) {
         displayErrorCodes();
         return;
       }
       
-      Processor processor = new Processor(cmd.getOptionValue("mp"), cmd.getOptionValue("lk"), cmd.getOptionValue("lsk"));
+      if (cmd.hasOption("help") || !cmd.hasOption("src") || !cmd.hasOption("lk") || !cmd.hasOption("lsk") || !cmd.hasOption("files") || cmd.getOptionValues("files").length < 1) {
+        System.out.println(options.toString());
+        return;
+      }
+
+      Processor processor = new Processor(cmd.getOptionValue("mp"), cmd.getOptionValue("src"), cmd.getOptionValue("lk"), cmd.getOptionValue("lsk"));
       for (String file : cmd.getOptionValues("files")) {
+        System.out.println("Processing file [" + file + "]");
         int response = processor.process(file).getCode();
         if (response != 0) {
           System.exit(response);
