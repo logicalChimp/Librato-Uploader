@@ -84,6 +84,8 @@ public class Processor {
     TimeUnit timeoutUnit = TimeUnit.SECONDS;
     String agent = "librato-uploader";
     batch = new LibratoBatch(batchSize, Sanitizer.LAST_PASS, timeout, timeoutUnit, agent, poster);
+    
+    (new BuildState()).prefix(prefix).process(batch, null);
   }
   
   public Error process(String filename) {

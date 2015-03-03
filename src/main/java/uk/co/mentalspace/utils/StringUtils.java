@@ -15,4 +15,12 @@ public final class StringUtils {
   public static final Integer getAsInteger(String str) {
     return Integer.parseInt(str);
   }
+  
+  public static final Double getAsDouble(String str) {
+    return Double.parseDouble(str);
+  }
+  
+  public static final Long getAsLong(String str) {
+    return Long.parseLong(str);
+  }
 }

@@ -49,6 +49,17 @@ FROM codenvy/jdk7
 #     wget -qO- "https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz" | sudo tar -zx -C /opt/googlesdk && \
 #     sudo /bin/sh -c "/opt/googlesdk/google-cloud-sdk/install.sh" && \
 #     sudo chmod +x /opt/googlesdk/google-cloud-sdk/bin/gcloud
+RUN sudo apt-get update -y && \
+     sudo apt-get install --no-install-recommends -y -q curl build-essential python3 python3-dev python-pip git python3-pip groff less openssl && \
+     sudo pip3 install -U pip && \
+     sudo pip install awscli && \
+     mkdir /home/user/.aws && \
+     echo '[default]\n' > /home/user/.aws/credentials && \
+     echo 'aws_secret_access_key = T4g/FUNjQ/YNPFvVfHxJJNs0bC2+p26xbrecSlpV\n' >> /home/user/.aws/credentials && \
+     echo 'aws_access_key_id = AKIAILR7F3S2LC6DPCBA\n' >> /home/user/.aws/credentials
+     echo 'region=us-west-2\n' >> /home/user/.aws/credentials && \
+     echo 'output=json\n' >> /home/user/.aws/credentials
+
 RUN mkdir /home/user/app
 ADD $app$ /home/user/app/$app$
 #VOLUME ["/home/user/app"]
@@ -56,11 +67,11 @@ ADD $app$ /home/user/app/$app$
 
 RUN cd /home/user/app && \
 	unzip libratouploader-jar-with-dependencies.zip && \
-   echo 'java -cp ./lib/async-http-client-1.9.10.jar:./lib/commons-cli-1.2.jar:./lib/jackson-core-asl-1.9.7.jar:./lib/jackson-mapper-asl-1.9.7.jar:./lib/librato-java-1.0.7.jar:./lib/netty-3.10.0.final.jar:./lib/slf4j-api-1.6.6.jar:./application.jar uk.co.mentalspace.libratouploader.Main -mp DEV- -src test -lk willinghamg@hotmail.com -lsk e4444b01ac4f5f4e105b920cca2c75d1899d10abe0cd422a86999f030d3302f5 -files findbugs.xml checkstyle.xml ./junit/TESTS-TestSuites.xml' > /home/user/app/run.sh && \
+   echo 'java -cp ./lib/async-http-client-1.9.10.jar:./lib/commons-cli-1.2.jar:./lib/jackson-core-asl-1.9.7.jar:./lib/jackson-mapper-asl-1.9.7.jar:./lib/librato-java-1.0.7.jar:./lib/netty-3.10.0.final.jar:./lib/slf4j-api-1.6.6.jar:./application.jar uk.co.mentalspace.libratouploader.Main -mp DEV- -src test -lk willinghamg@hotmail.com -lsk e4444b01ac4f5f4e105b920cca2c75d1899d10abe0cd422a86999f030d3302f5 -files findbugs.xml checkstyle.xml ./junit/TESTS-TestSuites.xml ./cobertura/coverage.xml' > /home/user/app/run.sh && \
    chmod +777 ./run.sh && \
    mv application.jar application.zip && \
    unzip application.zip && \
-   mv application.zip application.jar 
+   mv application.zip application.jar
 #   ./run.sh
 
 # Include this as the CMD instruction in your Dockerfile if

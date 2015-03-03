@@ -6,6 +6,7 @@ import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.BasicParser;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.OptionBuilder;
+import uk.co.mentalspace.libratouploader.Processor.Error;
 
 public class Main {
   
@@ -35,9 +36,13 @@ public class Main {
       Processor processor = new Processor(cmd.getOptionValue("mp"), cmd.getOptionValue("src"), cmd.getOptionValue("lk"), cmd.getOptionValue("lsk"));
       for (String file : cmd.getOptionValues("files")) {
         System.out.println("Processing file [" + file + "]");
-        int response = processor.process(file).getCode();
-        if (response != 0) {
-          System.exit(response);
+        Error response = processor.process(file);
+        if (response != Error.NO_ERROR) {
+          if (response == Error.INVALID_FILE) {
+            System.err.println("Invalid file [" + file + "]");
+          } else {
+	          System.exit(response.getCode());
+          }
         }
       }
       
