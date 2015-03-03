@@ -26,7 +26,6 @@ public class FindBugs implements Metric {
     return (null != nodes && nodes.getLength() > 0);
   }
   
-  @SuppressWarnings("unchecked")
   public void process(LibratoBatch batch, Document doc) {
     NodeList nodes = doc.getElementsByTagName("FindBugsSummary");
     for (int i=0; i<nodes.getLength(); i++) {

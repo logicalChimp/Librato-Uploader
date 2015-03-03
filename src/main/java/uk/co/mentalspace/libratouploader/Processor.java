@@ -75,6 +75,7 @@ public class Processor {
     metrics.add((new Cobertura()).prefix(prefix));
     metrics.add((new FindBugs()).prefix(prefix));
     metrics.add((new Junit()).prefix(prefix));
+    metrics.add((new BuildState()).prefix(prefix));
     
     String apiUrl = "https://metrics-api.librato.com/v1/metrics";
     HttpPoster poster = NingHttpPoster.newPoster(libratoKey, libratoSecretKey, apiUrl);
@@ -84,8 +85,6 @@ public class Processor {
     TimeUnit timeoutUnit = TimeUnit.SECONDS;
     String agent = "librato-uploader";
     batch = new LibratoBatch(batchSize, Sanitizer.LAST_PASS, timeout, timeoutUnit, agent, poster);
-    
-    (new BuildState()).prefix(prefix).process(batch, null);
   }
   
   public Error process(String filename) {

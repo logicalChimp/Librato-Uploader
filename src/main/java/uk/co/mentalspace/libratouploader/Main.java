@@ -15,8 +15,8 @@ public class Main {
 	 options.addOption( "h", "help", false, "display this message" );
     options.addOption( "errors", false, "Display the list of error codes");
     options.addOption( "mp", "metric-prefix", true, "the prefix to add to every metric name (e.g. environment name)");
-    options.addOption( "lk", "librato-key", true, "the librato key to use to authenticate with Librato");
-    options.addOption( "lsk", "librato-secret-key", true, "the librato secret key to validate your use of the librato key");
+    options.addOption( "lu", "librato-user", true, "the librato user to authenticate with Librato");
+    options.addOption( "ls", "librato-secret-token", true, "the librato secret token to validate the use of the librato user account");
     options.addOption( "src", "librato-source", true, "the 'Source' of the metric data (e.g. machine name)");
     options.addOption(OptionBuilder.withLongOpt("files").withArgName("JUnitReport> <CoberturaReport> <FindBugsReport> <CheckstyleReport").withValueSeparator(' ').hasArgs(4).withDescription("The report files to parse (in any order) - just omit files as required.").create("t"));    
 

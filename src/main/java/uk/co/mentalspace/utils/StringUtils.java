@@ -13,14 +13,26 @@ public final class StringUtils {
   }
   
   public static final Integer getAsInteger(String str) {
-    return Integer.parseInt(str);
+    try {
+      return Integer.parseInt(str);
+    } catch (NumberFormatException nfe) {
+      return null;
+    }
   }
   
   public static final Double getAsDouble(String str) {
-    return Double.parseDouble(str);
+    try {
+      return Double.parseDouble(str);
+    } catch (NumberFormatException nfe) {
+      return null;
+    }
   }
   
   public static final Long getAsLong(String str) {
-    return Long.parseLong(str);
+    try {
+      return Long.parseLong(str);
+    } catch (NumberFormatException nfe) {
+      return null;
+    }
   }
 }
