@@ -28,12 +28,12 @@ public class Main {
         return;
       }
       
-      if (cmd.hasOption("help") || !cmd.hasOption("src") || !cmd.hasOption("lk") || !cmd.hasOption("lsk") || !cmd.hasOption("files") || cmd.getOptionValues("files").length < 1) {
+      if (cmd.hasOption("help") || !cmd.hasOption("src") || !cmd.hasOption("lu") || !cmd.hasOption("ls") || !cmd.hasOption("files") || cmd.getOptionValues("files").length < 1) {
         System.out.println(options.toString());
         return;
       }
 
-      Processor processor = new Processor(cmd.getOptionValue("mp"), cmd.getOptionValue("src"), cmd.getOptionValue("lk"), cmd.getOptionValue("lsk"));
+      Processor processor = new Processor(cmd.getOptionValue("mp"), cmd.getOptionValue("src"), cmd.getOptionValue("lu"), cmd.getOptionValue("ls"));
       for (String file : cmd.getOptionValues("files")) {
         System.out.println("Processing file [" + file + "]");
         Error response = processor.process(file);

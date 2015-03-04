@@ -67,7 +67,7 @@ ADD $app$ /home/user/app/$app$
 
 RUN cd /home/user/app && \
 	unzip libratouploader-jar-with-dependencies.zip && \
-   echo 'java -cp ./lib/async-http-client-1.9.10.jar:./lib/commons-cli-1.2.jar:./lib/jackson-core-asl-1.9.7.jar:./lib/jackson-mapper-asl-1.9.7.jar:./lib/librato-java-1.0.7.jar:./lib/netty-3.10.0.final.jar:./lib/slf4j-api-1.6.6.jar:./application.jar uk.co.mentalspace.libratouploader.Main -mp DEV- -src test -lk willinghamg@hotmail.com -lsk e4444b01ac4f5f4e105b920cca2c75d1899d10abe0cd422a86999f030d3302f5 -files findbugs.xml checkstyle.xml ./junit/TESTS-TestSuites.xml ./cobertura/coverage.xml' > /home/user/app/run.sh && \
+   echo 'java -cp ./lib/async-http-client-1.9.10.jar:./lib/commons-cli-1.2.jar:./lib/jackson-core-asl-1.9.7.jar:./lib/jackson-mapper-asl-1.9.7.jar:./lib/librato-java-1.0.7.jar:./lib/netty-3.10.0.final.jar:./lib/slf4j-api-1.6.6.jar:./application.jar uk.co.mentalspace.libratouploader.Main -mp DEV- -src test -lu willinghamg@hotmail.com -ls e4444b01ac4f5f4e105b920cca2c75d1899d10abe0cd422a86999f030d3302f5 -files findbugs.xml checkstyle.xml ./junit/TESTS-TestSuites.xml ./cobertura/coverage.xml' > /home/user/app/run.sh && \
    chmod +777 ./run.sh && \
    mv application.jar application.zip && \
    unzip application.zip && \
